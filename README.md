@@ -1,52 +1,60 @@
-# Etiketli Veri Olmadan Adapte Edilmiş Modele Güvenebilir miyiz?
+# Can We Trust the Adapted Model Without Labels?
 
-**Test Zamanı Adaptasyonu Sonrasında Etiketsiz Doğruluk Tahmin Edicilerinin Geçerliliği ve Uyarlama Kapısı**
+**Validity of Label-Free Accuracy Estimators after Test-Time Adaptation and an Adapt-or-Not Gate**
 
-*Can We Trust the Adapted Model Without Labels? Validity of Label-Free Accuracy Estimators after Test-Time Adaptation and an Adapt-or-Not Gate*
-
-Ozal Omarli — Danışman: Dr. Öğr. Üyesi Ramin Abbaszadi — OSTİM Teknik Üniversitesi, Derin Öğrenme Final Projesi
+Ozal Omarli — Advisor: Asst. Prof. Ramin Abbaszadi — OSTİM Technical University, Deep Learning Final Project
 
 ---
 
-## Özet
+## Abstract
 
-Bu depo, test zamanı adaptasyonundan (TTA) sonra modelin doğruluğunun etiket kullanmadan ne ölçüde tahmin edilebileceğini inceleyen çalışmanın kodunu, ön kaydını, sonuçlarını ve belgelerini içerir. Beş bağımsız CIFAR ResNet-18 modeli; temiz CIFAR-10, 15 CIFAR-10-C bozulması (şiddet 5) ve CIFAR-10.1 üzerinde, i.i.d. ve etiket-sıralı akışlarda Source, BN-adapt ve TENT ile çalıştırılmıştır. Ardından AC, AC-TS, DoC, ATC-MC, ATC-NE ve GDE tahmin edicilerinin hataları ön kayıtlı hipotez testleriyle ölçülmüş ve etiketsiz bir "uyarla / uyarlama" kapısı değerlendirilmiştir.
+This repository contains the code, preregistration, results and documents of a study on how well the accuracy of a model can be estimated without labels after test-time adaptation (TTA). Five independent CIFAR ResNet-18 models were run with Source, BN-adapt and TENT on clean CIFAR-10, 15 CIFAR-10-C corruptions (severity 5) and CIFAR-10.1, under i.i.d. and label-sorted streams. The errors of the AC, AC-TS, DoC, ATC-MC, ATC-NE and GDE estimators were then measured with preregistered hypothesis tests, and a label-free "adapt / do not adapt" gate was evaluated.
 
-**Makale:** [Türkçe](docs/makale/TMLR_Makale_TR.pdf) · [English](docs/makale/TMLR_Article_EN.pdf)
+## Documents
 
-## Depo yapısı
+| Document | English | Turkish |
+|---|---|---|
+| Paper (TMLR format) | [PDF](docs/paper/TMLR_Article_EN.pdf) | [PDF](docs/paper/TMLR_Makale_TR.pdf) |
+| Presentation | [PDF](docs/presentation/Presentation_EN.pdf) · [HTML](docs/presentation/Presentation_EN.html) | [PDF](docs/presentation/Sunum_TR.pdf) · [HTML](docs/presentation/Sunum_TR.html) |
+| Project proposal | [PDF](docs/proposal/Proposal_EN.pdf) | [PDF](docs/proposal/Proje_Onerisi_TR_Updated.pdf) |
+| Progress report | [PDF](docs/progress-report/Project_Progress_Report.pdf) · [Slides](docs/progress-report/Project_Progress_Presentation_EN.html) | [PDF](docs/progress-report/Proje_Ilerleme_Raporu_TR.pdf) · [Slides](docs/progress-report/Proje_Ilerleme_Sunumu_TR.html) |
+| Literature review (2016–2026) | [PDF](docs/literature-review/Literature_Review_2016-2026.pdf) | [PDF](docs/literature-review/Literatur_Derlemesi_2016-2026_TR.pdf) |
+
+HTML files are shown as source code on GitHub; download them and open them in a browser.
+
+## Repository structure
 
 ```
-Final/                  ana proje (ttamon paketi)
-  ttamon/               veri, modeller, yöntemler, tahmin ediciler, metrikler, istatistik, termal koruyucu
-  scripts/              eğitim, tahmin toplama, analiz, şekiller, kaynakça doğrulama, LaTeX üretimi
-  tests/                pytest birim testleri
-  results/              all_runs.csv, summary.json, tables/, logs/   (ham logitler: Release)
-  figures/              analiz şekilleri
-  paper/                kaynakça kayıtları ve doğrulama raporları
-  latex/                makale, öneri, rapor ve literatür derlemesi şablonları + TMLR stil dosyaları
-  presentation/         HTML sunum kaynakları ve üreticileri
-  PREREGISTRATION.md    ön kayıtlı hipotezler ve sapmalar
-src/, scripts/, tests/  denetlenen orijinal kod tabanı (Final/scripts/verify_audit.py bunu kullanır)
-results/                orijinal kod tabanının kayıtları (tohum 42–44 eğitim eğrileri dahil)
-AUDIT.md                orijinal kod tabanının denetim bulguları
-data/                   veri kümeleri (depoda yok; bkz. data/README.md)
-docs/                   teslim belgeleri (PDF/HTML)
+Final/                  main project (ttamon package)
+  ttamon/               data, models, methods, estimators, metrics, statistics, thermal guard
+  scripts/              training, prediction collection, analysis, figures, reference checks, LaTeX generation
+  tests/                pytest unit tests
+  results/              all_runs.csv, summary.json, tables/, logs/   (raw logits: see Releases)
+  figures/              analysis figures
+  paper/                bibliography records and verification reports
+  latex/                LaTeX templates for the paper, proposal, report and literature review + TMLR style files
+  presentation/         HTML slide sources and generators
+  PREREGISTRATION.md    preregistered hypotheses and deviations
+src/, scripts/, tests/  original (audited) code base, used by Final/scripts/verify_audit.py
+results/                logs of the original code base (incl. training curves for seeds 42–44)
+AUDIT.md                audit findings for the original code base
+data/                   datasets (not in the repository; see data/README.md)
+docs/                   submitted documents (PDF/HTML)
 ```
 
-## Büyük dosyalar (GitHub Releases)
+## Large files (GitHub Releases)
 
-Model ağırlıkları ve ham logitler depoya değil, **Releases** sayfasına (`v1.0`) eklenmiştir:
+Model weights and raw logits are not stored in the repository. They are attached to the **Releases** page (`v1.0`):
 
-| Dosya | Yerleştirileceği yer |
+| File | Where to put it |
 |---|---|
 | `resnet18_cifar10_seed42.pth` … `seed46.pth` | `src/models/checkpoints/` |
-| `raw_logits.zip` | `Final/results/` içine açın (→ `Final/results/raw/`) |
-| `SHA256SUMS.txt` | indirilen dosyaların doğrulanması için |
+| `raw_logits.zip` | extract into `Final/results/` (→ `Final/results/raw/`) |
+| `SHA256SUMS.txt` | to verify the downloaded files |
 
-Checkpoint SHA256 değerleri `Final/results/logs/checkpoint_hashes_final.json` ile aynıdır.
+The checkpoint SHA256 values match `Final/results/logs/checkpoint_hashes_final.json`.
 
-## Kurulum
+## Installation
 
 ```powershell
 uv venv .venv --python 3.12
@@ -55,13 +63,13 @@ cd Final
 ..\.venv\Scripts\python.exe -m pytest -q
 ```
 
-## Yeniden üretim
+## Reproduction
 
-* **Yalnızca tablo ve şekiller** (GPU ve yeniden eğitim gerekmez): veri kümelerini `data/README.md`'ye göre indirin (etiketler buradan okunur), `raw_logits.zip` dosyasını `Final/results/` içine açın, ardından `Final/` içinde `python scripts/analyze.py` ve `python scripts/make_figures.py` çalıştırın.
-* **Tüm hat:** veri kümelerini `data/README.md`'ye göre indirin, checkpoint'leri yerleştirin ve `Final/run_all.ps1` (Windows) ya da `Final/run_all.sh` çalıştırın.
+* **Tables and figures only** (no GPU or retraining needed): download the datasets as described in `data/README.md` (labels are read from them), extract `raw_logits.zip` into `Final/results/`, then run `python scripts/analyze.py` and `python scripts/make_figures.py` inside `Final/`.
+* **Full pipeline:** download the datasets as described in `data/README.md`, place the checkpoints, and run `Final/run_all.ps1` (Windows) or `Final/run_all.sh`.
 
-Makale ve sunumdaki tüm sayılar `Final/results/summary.json` ve `Final/results/tables/` dosyalarından otomatik okunur. Tohumlar, ortam ve donanım ayrıntıları `Final/README.md` dosyasındadır.
+Every number in the paper and the presentation is read automatically from `Final/results/summary.json` and `Final/results/tables/`. Seeds, environment and hardware details are in `Final/README.md`.
 
-## Lisans notu
+## License note
 
-`Final/latex/_style/tmlr-style-file-main/` altındaki TMLR stil dosyaları kendi lisansıyla (Apache 2.0) dağıtılır. CIFAR-10, CIFAR-10-C ve CIFAR-10.1 veri kümeleri bu depoda yer almaz; kendi kaynaklarının koşullarına tabidir.
+The TMLR style files under `Final/latex/_style/tmlr-style-file-main/` are distributed under their own license (Apache 2.0). The CIFAR-10, CIFAR-10-C and CIFAR-10.1 datasets are not included in this repository and are subject to the terms of their original sources.
