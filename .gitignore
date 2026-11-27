@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Data and large files (published on the Releases page)
+data/*
+!data/README.md
+src/models/checkpoints/*.pth
+Final/results/raw/
+Final/_aborted/
