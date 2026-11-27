@@ -1,0 +1,620 @@
+Toplam iş: 792 | yapılacak: 792 | cihaz: cuda
+[ThermalGuard] başladı | CPU 68.05000000000001 °C (perfcounter_thermalzone) | GPU 40.04 °C | limitler CPU 85.0 / GPU 80.0
+[   1/792] N16      Source       val                s42 st2026 acc= 94.84   6.6s | GPU 54.96 CPU 68.05000000000001 ok
+[   2/792] N16      Source       val                s43 st2026 acc= 93.54   6.6s | GPU 57.94 CPU 69.05000000000001 ok
+[   3/792] N16      Source       val                s44 st2026 acc= 93.88   6.6s | GPU 59.55 CPU 69.05000000000001 ok
+[   4/792] N16      BN-adapt     val                s42 st2026 acc= 90.08   6.8s | GPU 60.74 CPU 66.05000000000001 ok
+[   5/792] N16      BN-adapt     val                s43 st2026 acc= 88.42   6.6s | GPU 61.65 CPU 66.05000000000001 ok
+[   6/792] N16      BN-adapt     val                s44 st2026 acc= 90.32   6.6s | GPU 61.79 CPU 66.05000000000001 ok
+[   7/792] N16      TENT         val                s42 st2026 acc= 90.38  10.8s | GPU 62.84 CPU 71.05000000000001 ok
+[   8/792] N16      TENT         val                s43 st2026 acc= 88.60  10.6s | GPU 64.71 CPU 77.05000000000001 ok
+[   9/792] N16      TENT         val                s44 st2026 acc= 89.92  11.4s | GPU 65.05 CPU 80.05000000000001 warn
+[  10/792] N64      Source       val                s42 st2026 acc= 94.84  14.2s | GPU 62.55 CPU 80.05000000000001 warn
+[  11/792] N64      Source       val                s43 st2026 acc= 93.54   2.9s | GPU 62.55 CPU 66.05000000000001 ok
+[  12/792] N64      Source       val                s44 st2026 acc= 93.88   3.4s | GPU 65.95 CPU 66.05000000000001 ok
+[  13/792] N64      BN-adapt     val                s42 st2026 acc= 92.04   3.5s | GPU 65.95 CPU 66.05000000000001 ok
+[  14/792] N64      BN-adapt     val                s43 st2026 acc= 90.36   3.5s | GPU 65.95 CPU 66.05000000000001 ok
+[  15/792] N64      BN-adapt     val                s44 st2026 acc= 91.90   3.4s | GPU 66.32 CPU 70.05000000000001 ok
+[  16/792] N64      TENT         val                s42 st2026 acc= 92.66   6.7s | GPU 66.63 CPU 70.05000000000001 ok
+[  17/792] N64      TENT         val                s43 st2026 acc= 91.14   6.7s | GPU 67.03 CPU 70.05000000000001 ok
+[  18/792] N64      TENT         val                s44 st2026 acc= 91.86   7.0s | GPU 67.09 CPU 77.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=85.05000000000001 GPU=67.05 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[  19/792] N64      TENT-after   val                s42 st2026 acc= 92.70  29.1s | GPU 49.07 CPU 57.05000000000001 ok
+[  20/792] N64      TENT-after   val                s43 st2026 acc= 91.22   8.8s | GPU 63.23 CPU 57.05000000000001 ok
+[  21/792] N64      TENT-after   val                s44 st2026 acc= 91.82   8.9s | GPU 63.94 CPU 76.05000000000001 ok
+[  22/792] N64      TENT-lr1e-4  val                s42 st2026 acc= 92.18   6.8s | GPU 65.7 CPU 76.05000000000001 ok
+[  23/792] N64      TENT-lr1e-4  val                s43 st2026 acc= 90.44   6.9s | GPU 66.35 CPU 74.05000000000001 ok
+[  24/792] N64      TENT-lr1e-4  val                s44 st2026 acc= 91.92   6.7s | GPU 65.98 CPU 74.05000000000001 ok
+[  25/792] N64      TENT-lr1e-2  val                s42 st2026 acc= 72.50   6.8s | GPU 66.43 CPU 76.05000000000001 ok
+[  26/792] N64      TENT-lr1e-2  val                s43 st2026 acc= 64.06   6.9s | GPU 67.48 CPU 76.05000000000001 ok
+[  27/792] N64      TENT-lr1e-2  val                s44 st2026 acc= 62.98   6.5s | GPU 67.25 CPU 79.05000000000001 ok
+[  28/792] iid64    Source       clean              s42 st2026 acc= 93.86   6.1s | GPU 67.48 CPU 79.05000000000001 ok
+[  29/792] iid64    Source       clean              s43 st2026 acc= 93.44   6.1s | GPU 67.68 CPU 79.05000000000001 ok
+[  30/792] iid64    Source       clean              s44 st2026 acc= 93.88   6.1s | GPU 67.05 CPU 76.05000000000001 ok
+[  31/792] iid64    BN-adapt     clean              s42 st2026 acc= 91.96   6.0s | GPU 67.93 CPU 76.05000000000001 ok
+[  32/792] iid64    BN-adapt     clean              s43 st2026 acc= 90.52   6.0s | GPU 68.22 CPU 77.05000000000001 ok
+[  33/792] iid64    BN-adapt     clean              s44 st2026 acc= 92.35   6.0s | GPU 69.46 CPU 77.05000000000001 ok
+[  34/792] iid64    TENT         clean              s42 st2026 acc= 92.45  18.6s | GPU 67.14 CPU 80.05000000000001 warn
+[  35/792] iid64    TENT         clean              s43 st2026 acc= 91.90  16.1s | GPU 67.37 CPU 77.05000000000001 ok
+[  36/792] iid64    TENT         clean              s44 st2026 acc= 92.65  13.0s | GPU 68.56 CPU 74.05000000000001 ok
+[  37/792] iid64    Source       gaussian_noise     s42 st2026 acc= 23.95   6.1s | GPU 69.35 CPU 74.05000000000001 ok
+[  38/792] iid64    Source       gaussian_noise     s43 st2026 acc= 29.57  18.8s | GPU 60.06 CPU 69.05000000000001 ok
+[  39/792] iid64    Source       gaussian_noise     s44 st2026 acc= 27.09   5.9s | GPU 67.99 CPU 69.05000000000001 ok
+[  40/792] iid64    BN-adapt     gaussian_noise     s42 st2026 acc= 66.93   6.2s | GPU 67.25 CPU 69.05000000000001 ok
+[  41/792] iid64    BN-adapt     gaussian_noise     s43 st2026 acc= 63.80   6.1s | GPU 67.25 CPU 76.05000000000001 ok
+[  42/792] iid64    BN-adapt     gaussian_noise     s44 st2026 acc= 66.60   6.1s | GPU 68.95 CPU 76.05000000000001 ok
+[  43/792] iid64    TENT         gaussian_noise     s42 st2026 acc= 73.53  13.0s | GPU 68.11 CPU 76.05000000000001 ok
+[  44/792] iid64    TENT         gaussian_noise     s43 st2026 acc= 71.36  20.0s | GPU 65.24 CPU 84.05000000000001 warn
+[  45/792] iid64    TENT         gaussian_noise     s44 st2026 acc= 72.87  14.8s | GPU 69.72 CPU 73.05000000000001 ok
+[  46/792] iid64    Source       shot_noise         s42 st2026 acc= 30.17  10.5s | GPU 66.26 CPU 81.05000000000001 warn
+[  47/792] iid64    Source       shot_noise         s43 st2026 acc= 36.34  13.6s | GPU 60.6 CPU 78.05000000000001 ok
+[  48/792] iid64    Source       shot_noise         s44 st2026 acc= 33.20   5.8s | GPU 66.35 CPU 78.05000000000001 ok
+[  49/792] iid64    BN-adapt     shot_noise         s42 st2026 acc= 69.44   6.0s | GPU 68.84 CPU 78.05000000000001 ok
+[  50/792] iid64    BN-adapt     shot_noise         s43 st2026 acc= 65.30   6.1s | GPU 68.07 CPU 76.05000000000001 ok
+[  51/792] iid64    BN-adapt     shot_noise         s44 st2026 acc= 69.01   6.0s | GPU 67.88 CPU 76.05000000000001 ok
+[  52/792] iid64    TENT         shot_noise         s42 st2026 acc= 75.84  13.0s | GPU 70.03 CPU 79.05000000000001 ok
+[  53/792] iid64    TENT         shot_noise         s43 st2026 acc= 74.27  12.9s | GPU 69.12 CPU 78.05000000000001 ok
+[  54/792] iid64    TENT         shot_noise         s44 st2026 acc= 76.10  13.0s | GPU 69.38 CPU 78.05000000000001 ok
+[  55/792] iid64    Source       impulse_noise      s42 st2026 acc= 20.23   6.1s | GPU 70.62 CPU 78.05000000000001 ok
+[  56/792] iid64    Source       impulse_noise      s43 st2026 acc= 26.62   7.6s | GPU 70.99 CPU 84.05000000000001 warn
+[  57/792] iid64    Source       impulse_noise      s44 st2026 acc= 22.69  16.8s | GPU 65.5 CPU 68.05000000000001 ok
+[  58/792] iid64    BN-adapt     impulse_noise      s42 st2026 acc= 60.15   6.1s | GPU 67.51 CPU 68.05000000000001 ok
+[  59/792] iid64    BN-adapt     impulse_noise      s43 st2026 acc= 57.37   6.1s | GPU 69.43 CPU 68.05000000000001 ok
+[  60/792] iid64    BN-adapt     impulse_noise      s44 st2026 acc= 61.35   5.7s | GPU 67.77 CPU 79.05000000000001 ok
+[  61/792] iid64    TENT         impulse_noise      s42 st2026 acc= 67.12  12.8s | GPU 69.95 CPU 79.05000000000001 ok
+[  62/792] iid64    TENT         impulse_noise      s43 st2026 acc= 64.91  12.9s | GPU 70.79 CPU 79.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=86.05000000000001 GPU=68.84 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[  63/792] iid64    TENT         impulse_noise      s44 st2026 acc= 67.36  33.1s | GPU 65.47 CPU 74.05000000000001 ok
+[  64/792] iid64    Source       defocus_blur       s42 st2026 acc= 56.42   6.1s | GPU 66.75 CPU 74.05000000000001 ok
+[  65/792] iid64    Source       defocus_blur       s43 st2026 acc= 47.31   6.2s | GPU 66.09 CPU 74.05000000000001 ok
+[  66/792] iid64    Source       defocus_blur       s44 st2026 acc= 52.45   5.9s | GPU 67.51 CPU 74.05000000000001 ok
+[  67/792] iid64    BN-adapt     defocus_blur       s42 st2026 acc= 85.13   6.1s | GPU 66.89 CPU 74.05000000000001 ok
+[  68/792] iid64    BN-adapt     defocus_blur       s43 st2026 acc= 84.52   8.6s | GPU 67.03 CPU 81.05000000000001 warn
+[  69/792] iid64    BN-adapt     defocus_blur       s44 st2026 acc= 84.95  15.9s | GPU 62.21 CPU 68.05000000000001 ok
+[  70/792] iid64    TENT         defocus_blur       s42 st2026 acc= 86.32  12.8s | GPU 67.45 CPU 76.05000000000001 ok
+[  71/792] iid64    TENT         defocus_blur       s43 st2026 acc= 86.65  12.4s | GPU 68.53 CPU 76.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=85.05000000000001 GPU=68.36 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[  72/792] iid64    TENT         defocus_blur       s44 st2026 acc= 86.06  33.0s | GPU 64.51 CPU 55.05000000000001 ok
+[  73/792] iid64    Source       glass_blur         s42 st2026 acc= 42.37  18.7s | GPU 61.59 CPU 62.05000000000001 ok
+[  74/792] iid64    Source       glass_blur         s43 st2026 acc= 46.47   6.1s | GPU 64.51 CPU 62.05000000000001 ok
+[  75/792] iid64    Source       glass_blur         s44 st2026 acc= 42.64   6.2s | GPU 66.32 CPU 62.05000000000001 ok
+[  76/792] iid64    BN-adapt     glass_blur         s42 st2026 acc= 62.35  18.8s | GPU 60.37 CPU 64.05000000000001 ok
+[  77/792] iid64    BN-adapt     glass_blur         s43 st2026 acc= 62.21   6.0s | GPU 65.67 CPU 64.05000000000001 ok
+[  78/792] iid64    BN-adapt     glass_blur         s44 st2026 acc= 60.86   6.1s | GPU 67.31 CPU 64.05000000000001 ok
+[  79/792] iid64    TENT         glass_blur         s42 st2026 acc= 67.03  22.6s | GPU 62.33 CPU 67.05000000000001 ok
+[  80/792] iid64    TENT         glass_blur         s43 st2026 acc= 66.38  12.3s | GPU 67.77 CPU 79.05000000000001 ok
+[  81/792] iid64    TENT         glass_blur         s44 st2026 acc= 65.38  12.9s | GPU 67.71 CPU 79.05000000000001 ok
+[  82/792] iid64    Source       motion_blur        s42 st2026 acc= 64.03  18.8s | GPU 63.91 CPU 66.05000000000001 ok
+[  83/792] iid64    Source       motion_blur        s43 st2026 acc= 60.01   6.1s | GPU 67.0 CPU 66.05000000000001 ok
+[  84/792] iid64    Source       motion_blur        s44 st2026 acc= 61.45   6.3s | GPU 68.11 CPU 66.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=85.05000000000001 GPU=66.94 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+Toplam iş: 525 | yapılacak: 453 | cihaz: cuda
+[ThermalGuard] başladı | CPU 88.05000000000001 °C (perfcounter_thermalzone) | GPU 66.41 °C | limitler CPU 85.0 / GPU 80.0
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=88.05000000000001 GPU=67.59 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (30 sn bekleme).
+[   1/453] iid64    BN-adapt     motion_blur        s42 st2026 acc= 83.75  36.6s | GPU 68.9 CPU 73.05000000000001 ok
+[   2/453] iid64    BN-adapt     motion_blur        s43 st2026 acc= 82.53   8.0s | GPU 68.9 CPU 82.05000000000001 warn
+[   3/453] iid64    BN-adapt     motion_blur        s44 st2026 acc= 84.16  12.8s | GPU 68.84 CPU 72.05000000000001 ok
+[   4/453] iid64    TENT         motion_blur        s42 st2026 acc= 85.19  12.7s | GPU 68.75 CPU 72.05000000000001 ok
+[   5/453] iid64    TENT         motion_blur        s43 st2026 acc= 84.73   7.5s | GPU 70.06 CPU 79.05000000000001 ok
+[   6/453] iid64    TENT         motion_blur        s44 st2026 acc= 85.32   7.5s | GPU 70.57 CPU 79.05000000000001 ok
+[   7/453] iid64    Source       zoom_blur          s42 st2026 acc= 63.28   6.1s | GPU 70.4 CPU 77.05000000000001 ok
+[   8/453] iid64    Source       zoom_blur          s43 st2026 acc= 55.10   6.1s | GPU 69.43 CPU 77.05000000000001 ok
+[   9/453] iid64    Source       zoom_blur          s44 st2026 acc= 58.91   6.1s | GPU 68.73 CPU 77.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=86.05000000000001 GPU=68.56 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[  10/453] iid64    BN-adapt     zoom_blur          s42 st2026 acc= 84.50  26.2s | GPU 68.98 CPU 75.05000000000001 ok
+[  11/453] iid64    BN-adapt     zoom_blur          s43 st2026 acc= 83.44   4.5s | GPU 70.11 CPU 75.05000000000001 ok
+[  12/453] iid64    BN-adapt     zoom_blur          s44 st2026 acc= 84.76   8.7s | GPU 67.99 CPU 81.05000000000001 warn
+[  13/453] iid64    TENT         zoom_blur          s42 st2026 acc= 87.07  14.7s | GPU 69.66 CPU 74.05000000000001 ok
+[  14/453] iid64    TENT         zoom_blur          s43 st2026 acc= 85.49  12.8s | GPU 69.66 CPU 77.05000000000001 ok
+[  15/453] iid64    TENT         zoom_blur          s44 st2026 acc= 85.54  11.1s | GPU 70.6 CPU 77.05000000000001 ok
+[  16/453] iid64    Source       snow               s42 st2026 acc= 73.25   3.4s | GPU 69.61 CPU 73.05000000000001 ok
+[  17/453] iid64    Source       snow               s43 st2026 acc= 73.08   3.8s | GPU 71.13 CPU 73.05000000000001 ok
+[  18/453] iid64    Source       snow               s44 st2026 acc= 71.84   3.4s | GPU 71.13 CPU 73.05000000000001 ok
+[  19/453] iid64    BN-adapt     snow               s42 st2026 acc= 78.44   4.2s | GPU 68.47 CPU 73.05000000000001 ok
+[  20/453] iid64    BN-adapt     snow               s43 st2026 acc= 76.44  12.3s | GPU 69.32 CPU 81.05000000000001 warn
+[  21/453] iid64    BN-adapt     snow               s44 st2026 acc= 78.51   8.6s | GPU 69.12 CPU 74.05000000000001 ok
+[  22/453] iid64    TENT         snow               s42 st2026 acc= 81.12  11.1s | GPU 70.85 CPU 74.05000000000001 ok
+[  23/453] iid64    TENT         snow               s43 st2026 acc= 79.33   7.4s | GPU 71.93 CPU 76.05000000000001 ok
+[  24/453] iid64    TENT         snow               s44 st2026 acc= 81.80   8.5s | GPU 71.73 CPU 76.05000000000001 ok
+[  25/453] iid64    Source       frost              s42 st2026 acc= 58.51   6.2s | GPU 70.34 CPU 79.05000000000001 ok
+[  26/453] iid64    Source       frost              s43 st2026 acc= 56.63   6.1s | GPU 69.95 CPU 79.05000000000001 ok
+[  27/453] iid64    Source       frost              s44 st2026 acc= 59.28   3.8s | GPU 72.1 CPU 79.05000000000001 ok
+[  28/453] iid64    BN-adapt     frost              s42 st2026 acc= 78.36   3.4s | GPU 72.1 CPU 79.05000000000001 ok
+[  29/453] iid64    BN-adapt     frost              s43 st2026 acc= 74.86   3.2s | GPU 71.73 CPU 79.05000000000001 ok
+[  30/453] iid64    BN-adapt     frost              s44 st2026 acc= 77.40   3.3s | GPU 71.73 CPU 79.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=85.05000000000001 GPU=72.41 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[  31/453] iid64    TENT         frost              s42 st2026 acc= 80.89  28.6s | GPU 70.03 CPU 71.05000000000001 ok
+[  32/453] iid64    TENT         frost              s43 st2026 acc= 78.37  13.0s | GPU 69.58 CPU 76.05000000000001 ok
+[  33/453] iid64    TENT         frost              s44 st2026 acc= 80.54  10.9s | GPU 70.62 CPU 76.05000000000001 ok
+[  34/453] iid64    Source       fog                s42 st2026 acc= 68.74  11.8s | GPU 62.86 CPU 81.05000000000001 warn
+[  35/453] iid64    Source       fog                s43 st2026 acc= 66.86   7.8s | GPU 67.88 CPU 76.05000000000001 ok
+[  36/453] iid64    Source       fog                s44 st2026 acc= 72.29   6.3s | GPU 68.79 CPU 76.05000000000001 ok
+[  37/453] iid64    BN-adapt     fog                s42 st2026 acc= 83.03   4.5s | GPU 69.27 CPU 76.05000000000001 ok
+[  38/453] iid64    BN-adapt     fog                s43 st2026 acc= 80.64   3.3s | GPU 69.24 CPU 77.05000000000001 ok
+[  39/453] iid64    BN-adapt     fog                s44 st2026 acc= 82.47   3.4s | GPU 70.96 CPU 77.05000000000001 ok
+[  40/453] iid64    TENT         fog                s42 st2026 acc= 85.51   7.8s | GPU 69.89 CPU 77.05000000000001 ok
+[  41/453] iid64    TENT         fog                s43 st2026 acc= 83.92  12.9s | GPU 70.91 CPU 78.05000000000001 ok
+[  42/453] iid64    TENT         fog                s44 st2026 acc= 84.60   8.3s | GPU 71.19 CPU 77.05000000000001 ok
+[  43/453] iid64    Source       brightness         s42 st2026 acc= 88.85   3.4s | GPU 71.64 CPU 77.05000000000001 ok
+[  44/453] iid64    Source       brightness         s43 st2026 acc= 88.94   3.4s | GPU 71.64 CPU 77.05000000000001 ok
+[  45/453] iid64    Source       brightness         s44 st2026 acc= 89.22   3.4s | GPU 71.7 CPU 77.05000000000001 ok
+[  46/453] iid64    BN-adapt     brightness         s42 st2026 acc= 89.22   6.9s | GPU 70.82 CPU 81.05000000000001 warn
+[  47/453] iid64    BN-adapt     brightness         s43 st2026 acc= 87.11  11.5s | GPU 69.38 CPU 78.05000000000001 ok
+[  48/453] iid64    BN-adapt     brightness         s44 st2026 acc= 89.35   6.1s | GPU 69.55 CPU 78.05000000000001 ok
+[  49/453] iid64    TENT         brightness         s42 st2026 acc= 89.59  11.5s | GPU 71.39 CPU 80.05000000000001 warn
+[  50/453] iid64    TENT         brightness         s43 st2026 acc= 89.31  17.5s | GPU 67.88 CPU 81.05000000000001 warn
+[  51/453] iid64    TENT         brightness         s44 st2026 acc= 90.48  20.2s | GPU 68.45 CPU 82.05000000000001 warn
+[  52/453] iid64    Source       contrast           s42 st2026 acc= 30.50   9.6s | GPU 69.41 CPU 72.05000000000001 ok
+[  53/453] iid64    Source       contrast           s43 st2026 acc= 27.53   6.1s | GPU 69.32 CPU 72.05000000000001 ok
+[  54/453] iid64    Source       contrast           s44 st2026 acc= 31.15   6.1s | GPU 70.45 CPU 72.05000000000001 ok
+[  55/453] iid64    BN-adapt     contrast           s42 st2026 acc= 84.48   6.0s | GPU 69.92 CPU 77.05000000000001 ok
+[  56/453] iid64    BN-adapt     contrast           s43 st2026 acc= 83.04   6.3s | GPU 70.68 CPU 77.05000000000001 ok
+[  57/453] iid64    BN-adapt     contrast           s44 st2026 acc= 84.09   2.4s | GPU 70.68 CPU 77.05000000000001 ok
+[  58/453] iid64    TENT         contrast           s42 st2026 acc= 84.69   4.2s | GPU 72.8 CPU 76.05000000000001 ok
+[  59/453] iid64    TENT         contrast           s43 st2026 acc= 81.85   4.1s | GPU 72.61 CPU 76.05000000000001 ok
+[  60/453] iid64    TENT         contrast           s44 st2026 acc= 82.46   4.2s | GPU 73.12 CPU 76.05000000000001 ok
+[  61/453] iid64    Source       elastic_transform  s42 st2026 acc= 73.87   1.9s | GPU 73.12 CPU 76.05000000000001 ok
+[  62/453] iid64    Source       elastic_transform  s43 st2026 acc= 73.77   1.9s | GPU 73.12 CPU 76.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=86.05000000000001 GPU=70.85 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[  63/453] iid64    Source       elastic_transform  s44 st2026 acc= 72.90  24.1s | GPU 65.7 CPU 56.05000000000001 ok
+[  64/453] iid64    BN-adapt     elastic_transform  s42 st2026 acc= 74.25   6.1s | GPU 66.57 CPU 56.05000000000001 ok
+[  65/453] iid64    BN-adapt     elastic_transform  s43 st2026 acc= 73.14   6.1s | GPU 67.03 CPU 75.05000000000001 ok
+[  66/453] iid64    BN-adapt     elastic_transform  s44 st2026 acc= 74.20   6.1s | GPU 66.86 CPU 75.05000000000001 ok
+[  67/453] iid64    TENT         elastic_transform  s42 st2026 acc= 76.82  17.5s | GPU 67.11 CPU 80.05000000000001 warn
+[  68/453] iid64    TENT         elastic_transform  s43 st2026 acc= 76.03  19.8s | GPU 69.01 CPU 77.05000000000001 ok
+[  69/453] iid64    TENT         elastic_transform  s44 st2026 acc= 76.74  12.9s | GPU 68.87 CPU 77.05000000000001 ok
+[  70/453] iid64    Source       pixelate           s42 st2026 acc= 52.33  11.9s | GPU 67.82 CPU 82.05000000000001 warn
+[  71/453] iid64    Source       pixelate           s43 st2026 acc= 43.09   7.5s | GPU 66.89 CPU 74.05000000000001 ok
+[  72/453] iid64    Source       pixelate           s44 st2026 acc= 39.71   3.4s | GPU 69.38 CPU 74.05000000000001 ok
+[  73/453] iid64    BN-adapt     pixelate           s42 st2026 acc= 77.05   3.9s | GPU 69.38 CPU 74.05000000000001 ok
+[  74/453] iid64    BN-adapt     pixelate           s43 st2026 acc= 74.41   3.4s | GPU 69.69 CPU 74.05000000000001 ok
+[  75/453] iid64    BN-adapt     pixelate           s44 st2026 acc= 76.28  10.3s | GPU 70.29 CPU 84.05000000000001 warn
+[  76/453] iid64    TENT         pixelate           s42 st2026 acc= 81.73  20.2s | GPU 69.61 CPU 80.05000000000001 warn
+[  77/453] iid64    TENT         pixelate           s43 st2026 acc= 79.54   6.8s | GPU 62.7 CPU 64.05000000000001 ok
+[  78/453] iid64    TENT         pixelate           s44 st2026 acc= 81.00   4.2s | GPU 71.93 CPU 64.05000000000001 ok
+[  79/453] iid64    Source       jpeg_compression   s42 st2026 acc= 72.68   1.8s | GPU 71.93 CPU 64.05000000000001 ok
+[  80/453] iid64    Source       jpeg_compression   s43 st2026 acc= 74.57   1.9s | GPU 71.39 CPU 64.05000000000001 ok
+[  81/453] iid64    Source       jpeg_compression   s44 st2026 acc= 71.52   1.9s | GPU 71.39 CPU 64.05000000000001 ok
+[  82/453] iid64    BN-adapt     jpeg_compression   s42 st2026 acc= 72.06   1.8s | GPU 71.39 CPU 64.05000000000001 ok
+[  83/453] iid64    BN-adapt     jpeg_compression   s43 st2026 acc= 70.03   1.9s | GPU 71.5 CPU 77.05000000000001 ok
+[  84/453] iid64    BN-adapt     jpeg_compression   s44 st2026 acc= 71.01   1.8s | GPU 71.5 CPU 77.05000000000001 ok
+[  85/453] iid64    TENT         jpeg_compression   s42 st2026 acc= 77.65   4.2s | GPU 72.38 CPU 77.05000000000001 ok
+[  86/453] iid64    TENT         jpeg_compression   s43 st2026 acc= 74.61   4.2s | GPU 72.61 CPU 77.05000000000001 ok
+[  87/453] iid64    TENT         jpeg_compression   s44 st2026 acc= 75.74   4.2s | GPU 72.61 CPU 77.05000000000001 ok
+[  88/453] iid64    Source       cifar10_1          s42 st2026 acc= 87.35   0.5s | GPU 72.75 CPU 74.05000000000001 ok
+[  89/453] iid64    Source       cifar10_1          s43 st2026 acc= 86.70   0.5s | GPU 72.75 CPU 74.05000000000001 ok
+[  90/453] iid64    Source       cifar10_1          s44 st2026 acc= 86.15   0.5s | GPU 72.75 CPU 74.05000000000001 ok
+[  91/453] iid64    BN-adapt     cifar10_1          s42 st2026 acc= 83.80   0.4s | GPU 72.75 CPU 74.05000000000001 ok
+[  92/453] iid64    BN-adapt     cifar10_1          s43 st2026 acc= 83.25   0.5s | GPU 72.75 CPU 74.05000000000001 ok
+[  93/453] iid64    BN-adapt     cifar10_1          s44 st2026 acc= 83.00   0.4s | GPU 72.75 CPU 74.05000000000001 ok
+[  94/453] iid64    TENT         cifar10_1          s42 st2026 acc= 84.30   0.9s | GPU 72.75 CPU 74.05000000000001 ok
+[  95/453] iid64    TENT         cifar10_1          s43 st2026 acc= 84.70   0.9s | GPU 72.75 CPU 74.05000000000001 ok
+[  96/453] iid64    TENT         cifar10_1          s44 st2026 acc= 83.70   0.9s | GPU 72.41 CPU 74.05000000000001 ok
+[  97/453] sorted64 Source       clean              s42 st2026 acc= 93.86   1.9s | GPU 72.41 CPU 74.05000000000001 ok
+[  98/453] sorted64 Source       clean              s43 st2026 acc= 93.44   1.9s | GPU 72.41 CPU 74.05000000000001 ok
+[  99/453] sorted64 Source       clean              s44 st2026 acc= 93.88   1.9s | GPU 71.96 CPU 74.05000000000001 ok
+[ 100/453] sorted64 BN-adapt     clean              s42 st2026 acc= 24.73   1.9s | GPU 71.96 CPU 74.05000000000001 ok
+[ 101/453] sorted64 BN-adapt     clean              s43 st2026 acc= 23.63   1.8s | GPU 71.96 CPU 74.05000000000001 ok
+[ 102/453] sorted64 BN-adapt     clean              s44 st2026 acc= 24.82   1.8s | GPU 72.69 CPU 74.05000000000001 ok
+[ 103/453] sorted64 TENT         clean              s42 st2026 acc= 23.78   4.2s | GPU 72.69 CPU 74.05000000000001 ok
+[ 104/453] sorted64 TENT         clean              s43 st2026 acc= 22.62   4.2s | GPU 65.36 CPU 74.05000000000001 ok
+[ 105/453] sorted64 TENT         clean              s44 st2026 acc= 22.63   4.2s | GPU 72.89 CPU 74.05000000000001 ok
+[ 106/453] sorted64 Source       gaussian_noise     s42 st2026 acc= 23.95   1.9s | GPU 72.89 CPU 74.05000000000001 ok
+[ 107/453] sorted64 Source       gaussian_noise     s43 st2026 acc= 29.57   9.7s | GPU 68.27 CPU 82.05000000000001 warn
+[ 108/453] sorted64 Source       gaussian_noise     s44 st2026 acc= 27.09   9.3s | GPU 67.96 CPU 75.05000000000001 ok
+[ 109/453] sorted64 BN-adapt     gaussian_noise     s42 st2026 acc= 19.10   6.2s | GPU 70.74 CPU 75.05000000000001 ok
+[ 110/453] sorted64 BN-adapt     gaussian_noise     s43 st2026 acc= 17.71   4.8s | GPU 68.98 CPU 75.05000000000001 ok
+[ 111/453] sorted64 BN-adapt     gaussian_noise     s44 st2026 acc= 18.92   7.1s | GPU 68.11 CPU 81.05000000000001 warn
+[ 112/453] sorted64 TENT         gaussian_noise     s42 st2026 acc= 18.01  15.1s | GPU 68.5 CPU 73.05000000000001 ok
+[ 113/453] sorted64 TENT         gaussian_noise     s43 st2026 acc= 17.79   9.5s | GPU 69.92 CPU 73.05000000000001 ok
+[ 114/453] sorted64 TENT         gaussian_noise     s44 st2026 acc= 17.29   4.2s | GPU 72.1 CPU 74.05000000000001 ok
+[ 115/453] sorted64 Source       shot_noise         s42 st2026 acc= 30.17   1.9s | GPU 72.1 CPU 74.05000000000001 ok
+[ 116/453] sorted64 Source       shot_noise         s43 st2026 acc= 36.34   1.9s | GPU 67.48 CPU 74.05000000000001 ok
+[ 117/453] sorted64 Source       shot_noise         s44 st2026 acc= 33.20   1.8s | GPU 67.48 CPU 74.05000000000001 ok
+[ 118/453] sorted64 BN-adapt     shot_noise         s42 st2026 acc= 19.25   1.8s | GPU 72.92 CPU 74.05000000000001 ok
+[ 119/453] sorted64 BN-adapt     shot_noise         s43 st2026 acc= 17.80   1.8s | GPU 72.92 CPU 74.05000000000001 ok
+[ 120/453] sorted64 BN-adapt     shot_noise         s44 st2026 acc= 19.42   1.8s | GPU 72.92 CPU 74.05000000000001 ok
+[ 121/453] sorted64 TENT         shot_noise         s42 st2026 acc= 18.08   4.2s | GPU 72.72 CPU 77.05000000000001 ok
+[ 122/453] sorted64 TENT         shot_noise         s43 st2026 acc= 17.02   4.2s | GPU 73.12 CPU 77.05000000000001 ok
+[ 123/453] sorted64 TENT         shot_noise         s44 st2026 acc= 18.38   4.1s | GPU 72.78 CPU 77.05000000000001 ok
+[ 124/453] sorted64 Source       impulse_noise      s42 st2026 acc= 20.23   1.9s | GPU 72.78 CPU 77.05000000000001 ok
+[ 125/453] sorted64 Source       impulse_noise      s43 st2026 acc= 26.62   1.9s | GPU 72.78 CPU 77.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=85.05000000000001 GPU=72.32 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 126/453] sorted64 Source       impulse_noise      s44 st2026 acc= 22.69  23.7s | GPU 69.18 CPU 73.05000000000001 ok
+[ 127/453] sorted64 BN-adapt     impulse_noise      s42 st2026 acc= 17.17   6.2s | GPU 68.56 CPU 73.05000000000001 ok
+[ 128/453] sorted64 BN-adapt     impulse_noise      s43 st2026 acc= 16.09  10.9s | GPU 68.64 CPU 82.05000000000001 warn
+[ 129/453] sorted64 BN-adapt     impulse_noise      s44 st2026 acc= 17.69   9.7s | GPU 69.92 CPU 77.05000000000001 ok
+[ 130/453] sorted64 TENT         impulse_noise      s42 st2026 acc= 16.14  11.6s | GPU 70.2 CPU 77.05000000000001 ok
+[ 131/453] sorted64 TENT         impulse_noise      s43 st2026 acc= 15.83  14.8s | GPU 66.29 CPU 82.05000000000001 warn
+[ 132/453] sorted64 TENT         impulse_noise      s44 st2026 acc= 16.81  18.3s | GPU 64.65 CPU 72.05000000000001 ok
+[ 133/453] sorted64 Source       defocus_blur       s42 st2026 acc= 56.42   3.3s | GPU 64.65 CPU 72.05000000000001 ok
+[ 134/453] sorted64 Source       defocus_blur       s43 st2026 acc= 47.31   3.4s | GPU 70.11 CPU 72.05000000000001 ok
+[ 135/453] sorted64 Source       defocus_blur       s44 st2026 acc= 52.45   3.4s | GPU 70.26 CPU 72.05000000000001 ok
+[ 136/453] sorted64 BN-adapt     defocus_blur       s42 st2026 acc= 22.19   3.3s | GPU 70.26 CPU 72.05000000000001 ok
+[ 137/453] sorted64 BN-adapt     defocus_blur       s43 st2026 acc= 21.52   8.0s | GPU 68.13 CPU 82.05000000000001 warn
+[ 138/453] sorted64 BN-adapt     defocus_blur       s44 st2026 acc= 22.93  10.6s | GPU 69.18 CPU 74.05000000000001 ok
+[ 139/453] sorted64 TENT         defocus_blur       s42 st2026 acc= 21.34  13.0s | GPU 70.0 CPU 74.05000000000001 ok
+[ 140/453] sorted64 TENT         defocus_blur       s43 st2026 acc= 19.72  13.0s | GPU 69.66 CPU 77.05000000000001 ok
+[ 141/453] sorted64 TENT         defocus_blur       s44 st2026 acc= 20.99   4.7s | GPU 72.64 CPU 76.05000000000001 ok
+[ 142/453] sorted64 Source       glass_blur         s42 st2026 acc= 42.37   1.9s | GPU 72.64 CPU 76.05000000000001 ok
+[ 143/453] sorted64 Source       glass_blur         s43 st2026 acc= 46.47   1.8s | GPU 72.64 CPU 76.05000000000001 ok
+[ 144/453] sorted64 Source       glass_blur         s44 st2026 acc= 42.64   1.9s | GPU 70.94 CPU 76.05000000000001 ok
+[ 145/453] sorted64 BN-adapt     glass_blur         s42 st2026 acc= 16.78   1.8s | GPU 70.94 CPU 76.05000000000001 ok
+[ 146/453] sorted64 BN-adapt     glass_blur         s43 st2026 acc= 16.71   1.8s | GPU 73.03 CPU 76.05000000000001 ok
+[ 147/453] sorted64 BN-adapt     glass_blur         s44 st2026 acc= 17.34   1.8s | GPU 73.03 CPU 76.05000000000001 ok
+[ 148/453] sorted64 TENT         glass_blur         s42 st2026 acc= 16.18   4.2s | GPU 72.55 CPU 77.05000000000001 ok
+[ 149/453] sorted64 TENT         glass_blur         s43 st2026 acc= 15.92   4.2s | GPU 72.55 CPU 77.05000000000001 ok
+[ 150/453] sorted64 TENT         glass_blur         s44 st2026 acc= 15.43   4.2s | GPU 67.43 CPU 77.05000000000001 ok
+[ 151/453] sorted64 Source       motion_blur        s42 st2026 acc= 64.03   1.9s | GPU 73.03 CPU 77.05000000000001 ok
+[ 152/453] sorted64 Source       motion_blur        s43 st2026 acc= 60.01   1.9s | GPU 73.03 CPU 77.05000000000001 ok
+[ 153/453] sorted64 Source       motion_blur        s44 st2026 acc= 61.45   1.8s | GPU 73.03 CPU 77.05000000000001 ok
+[ 154/453] sorted64 BN-adapt     motion_blur        s42 st2026 acc= 21.93   5.7s | GPU 72.92 CPU 84.05000000000001 warn
+[ 155/453] sorted64 BN-adapt     motion_blur        s43 st2026 acc= 20.96  11.7s | GPU 53.86 CPU 61.05000000000001 ok
+[ 156/453] sorted64 BN-adapt     motion_blur        s44 st2026 acc= 22.81   6.1s | GPU 67.57 CPU 61.05000000000001 ok
+[ 157/453] sorted64 TENT         motion_blur        s42 st2026 acc= 21.08  15.6s | GPU 67.96 CPU 81.05000000000001 warn
+[ 158/453] sorted64 TENT         motion_blur        s43 st2026 acc= 19.57  20.3s | GPU 68.9 CPU 83.05000000000001 warn
+[ 159/453] sorted64 TENT         motion_blur        s44 st2026 acc= 21.20   9.8s | GPU 70.4 CPU 70.05000000000001 ok
+[ 160/453] sorted64 Source       zoom_blur          s42 st2026 acc= 63.28   3.4s | GPU 70.4 CPU 70.05000000000001 ok
+[ 161/453] sorted64 Source       zoom_blur          s43 st2026 acc= 55.10   3.3s | GPU 70.79 CPU 70.05000000000001 ok
+[ 162/453] sorted64 Source       zoom_blur          s44 st2026 acc= 58.91   4.6s | GPU 70.45 CPU 81.05000000000001 warn
+[ 163/453] sorted64 BN-adapt     zoom_blur          s42 st2026 acc= 21.82  11.8s | GPU 62.92 CPU 81.05000000000001 warn
+[ 164/453] sorted64 BN-adapt     zoom_blur          s43 st2026 acc= 20.74   6.6s | GPU 68.7 CPU 74.05000000000001 ok
+[ 165/453] sorted64 BN-adapt     zoom_blur          s44 st2026 acc= 22.49   6.1s | GPU 69.97 CPU 74.05000000000001 ok
+[ 166/453] sorted64 TENT         zoom_blur          s42 st2026 acc= 21.87   9.0s | GPU 70.11 CPU 77.05000000000001 ok
+[ 167/453] sorted64 TENT         zoom_blur          s43 st2026 acc= 20.08   7.3s | GPU 70.17 CPU 77.05000000000001 ok
+[ 168/453] sorted64 TENT         zoom_blur          s44 st2026 acc= 21.74  10.9s | GPU 66.38 CPU 83.05000000000001 warn
+[ 169/453] sorted64 Source       snow               s42 st2026 acc= 73.25  10.4s | GPU 69.07 CPU 78.05000000000001 ok
+[ 170/453] sorted64 Source       snow               s43 st2026 acc= 73.08   6.2s | GPU 68.39 CPU 78.05000000000001 ok
+[ 171/453] sorted64 Source       snow               s44 st2026 acc= 71.84   6.2s | GPU 68.79 CPU 78.05000000000001 ok
+[ 172/453] sorted64 BN-adapt     snow               s42 st2026 acc= 21.27   3.2s | GPU 71.47 CPU 78.05000000000001 ok
+[ 173/453] sorted64 BN-adapt     snow               s43 st2026 acc= 20.35   3.3s | GPU 71.47 CPU 78.05000000000001 ok
+[ 174/453] sorted64 BN-adapt     snow               s44 st2026 acc= 21.60   3.3s | GPU 64.82 CPU 78.05000000000001 ok
+[ 175/453] sorted64 TENT         snow               s42 st2026 acc= 19.40   9.0s | GPU 70.11 CPU 82.05000000000001 warn
+[ 176/453] sorted64 TENT         snow               s43 st2026 acc= 18.75  18.1s | GPU 71.05 CPU 77.05000000000001 ok
+[ 177/453] sorted64 TENT         snow               s44 st2026 acc= 20.15  11.6s | GPU 71.64 CPU 77.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=87.05000000000001 GPU=71.64 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 178/453] sorted64 Source       frost              s42 st2026 acc= 58.51  25.8s | GPU 68.64 CPU 74.05000000000001 ok
+[ 179/453] sorted64 Source       frost              s43 st2026 acc= 56.63   5.1s | GPU 69.66 CPU 74.05000000000001 ok
+[ 180/453] sorted64 Source       frost              s44 st2026 acc= 59.28   3.5s | GPU 64.76 CPU 73.05000000000001 ok
+[ 181/453] sorted64 BN-adapt     frost              s42 st2026 acc= 21.85   3.4s | GPU 70.2 CPU 73.05000000000001 ok
+[ 182/453] sorted64 BN-adapt     frost              s43 st2026 acc= 20.72   3.2s | GPU 70.2 CPU 73.05000000000001 ok
+[ 183/453] sorted64 BN-adapt     frost              s44 st2026 acc= 22.27   3.3s | GPU 71.11 CPU 73.05000000000001 ok
+[ 184/453] sorted64 TENT         frost              s42 st2026 acc= 20.98   7.9s | GPU 72.38 CPU 82.05000000000001 warn
+[ 185/453] sorted64 TENT         frost              s43 st2026 acc= 19.72  11.3s | GPU 59.27 CPU 63.05000000000001 ok
+[ 186/453] sorted64 TENT         frost              s44 st2026 acc= 19.78   9.4s | GPU 67.37 CPU 63.05000000000001 ok
+[ 187/453] sorted64 Source       fog                s42 st2026 acc= 68.74   5.1s | GPU 68.53 CPU 63.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=86.05000000000001 GPU=65.13 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 188/453] sorted64 Source       fog                s43 st2026 acc= 66.86  25.5s | GPU 66.91 CPU 69.05000000000001 ok
+[ 189/453] sorted64 Source       fog                s44 st2026 acc= 72.29   5.2s | GPU 67.59 CPU 69.05000000000001 ok
+[ 190/453] sorted64 BN-adapt     fog                s42 st2026 acc= 22.36   9.3s | GPU 62.33 CPU 81.05000000000001 warn
+[ 191/453] sorted64 BN-adapt     fog                s43 st2026 acc= 21.47   9.5s | GPU 67.96 CPU 71.05000000000001 ok
+[ 192/453] sorted64 BN-adapt     fog                s44 st2026 acc= 22.67   6.3s | GPU 67.93 CPU 71.05000000000001 ok
+[ 193/453] sorted64 TENT         fog                s42 st2026 acc= 21.08  12.6s | GPU 67.99 CPU 83.05000000000001 warn
+[ 194/453] sorted64 TENT         fog                s43 st2026 acc= 21.14  17.8s | GPU 67.73 CPU 80.05000000000001 warn
+[ 195/453] sorted64 TENT         fog                s44 st2026 acc= 20.27  20.1s | GPU 67.88 CPU 82.05000000000001 warn
+[ 196/453] sorted64 Source       brightness         s42 st2026 acc= 88.85   5.8s | GPU 67.59 CPU 72.05000000000001 ok
+[ 197/453] sorted64 Source       brightness         s43 st2026 acc= 88.94   3.3s | GPU 70.51 CPU 72.05000000000001 ok
+[ 198/453] sorted64 Source       brightness         s44 st2026 acc= 89.22   3.2s | GPU 70.51 CPU 72.05000000000001 ok
+[ 199/453] sorted64 BN-adapt     brightness         s42 st2026 acc= 23.39   3.2s | GPU 70.85 CPU 72.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=86.05000000000001 GPU=69.18 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (65 sn bekleme).
+[ 200/453] sorted64 BN-adapt     brightness         s43 st2026 acc= 23.09  69.5s | GPU 67.68 CPU 76.05000000000001 ok
+[ 201/453] sorted64 BN-adapt     brightness         s44 st2026 acc= 24.46   6.2s | GPU 69.72 CPU 76.05000000000001 ok
+[ 202/453] sorted64 TENT         brightness         s42 st2026 acc= 21.70   9.4s | GPU 70.77 CPU 76.05000000000001 ok
+[ 203/453] sorted64 TENT         brightness         s43 st2026 acc= 21.47   7.6s | GPU 70.54 CPU 76.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=85.05000000000001 GPU=69.97 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (65 sn bekleme).
+[ 204/453] sorted64 TENT         brightness         s44 st2026 acc= 22.26  75.7s | GPU 69.29 CPU 72.05000000000001 ok
+[ 205/453] sorted64 Source       contrast           s42 st2026 acc= 30.50   5.6s | GPU 70.82 CPU 72.05000000000001 ok
+[ 206/453] sorted64 Source       contrast           s43 st2026 acc= 27.53   8.8s | GPU 68.19 CPU 84.05000000000001 warn
+[ 207/453] sorted64 Source       contrast           s44 st2026 acc= 31.15   9.9s | GPU 67.23 CPU 73.05000000000001 ok
+[ 208/453] sorted64 BN-adapt     contrast           s42 st2026 acc= 23.39   6.1s | GPU 68.87 CPU 73.05000000000001 ok
+[ 209/453] sorted64 BN-adapt     contrast           s43 st2026 acc= 22.04   6.0s | GPU 71.25 CPU 73.05000000000001 ok
+[ 210/453] sorted64 BN-adapt     contrast           s44 st2026 acc= 23.56   2.6s | GPU 72.3 CPU 81.05000000000001 warn
+[ 211/453] sorted64 TENT         contrast           s42 st2026 acc= 21.71  12.4s | GPU 59.95 CPU 81.05000000000001 warn
+[ 212/453] sorted64 TENT         contrast           s43 st2026 acc= 20.44   7.2s | GPU 58.33 CPU 64.05000000000001 ok
+[ 213/453] sorted64 TENT         contrast           s44 st2026 acc= 20.24  11.2s | GPU 69.72 CPU 78.05000000000001 ok
+[ 214/453] sorted64 Source       elastic_transform  s42 st2026 acc= 73.87   3.4s | GPU 69.72 CPU 78.05000000000001 ok
+[ 215/453] sorted64 Source       elastic_transform  s43 st2026 acc= 73.77   3.5s | GPU 68.5 CPU 78.05000000000001 ok
+[ 216/453] sorted64 Source       elastic_transform  s44 st2026 acc= 72.90   3.4s | GPU 69.43 CPU 78.05000000000001 ok
+[ 217/453] sorted64 BN-adapt     elastic_transform  s42 st2026 acc= 19.75   3.8s | GPU 69.43 CPU 78.05000000000001 ok
+[ 218/453] sorted64 BN-adapt     elastic_transform  s43 st2026 acc= 19.32  12.7s | GPU 68.56 CPU 82.05000000000001 warn
+[ 219/453] sorted64 BN-adapt     elastic_transform  s44 st2026 acc= 20.10   7.9s | GPU 69.69 CPU 76.05000000000001 ok
+[ 220/453] sorted64 TENT         elastic_transform  s42 st2026 acc= 17.59  11.6s | GPU 70.2 CPU 77.05000000000001 ok
+[ 221/453] sorted64 TENT         elastic_transform  s43 st2026 acc= 17.82   7.5s | GPU 71.59 CPU 77.05000000000001 ok
+[ 222/453] sorted64 TENT         elastic_transform  s44 st2026 acc= 18.98   7.5s | GPU 71.08 CPU 77.05000000000001 ok
+[ 223/453] sorted64 Source       pixelate           s42 st2026 acc= 52.33  11.1s | GPU 68.11 CPU 83.05000000000001 warn
+[ 224/453] sorted64 Source       pixelate           s43 st2026 acc= 43.09   8.4s | GPU 68.27 CPU 75.05000000000001 ok
+[ 225/453] sorted64 Source       pixelate           s44 st2026 acc= 39.71   6.1s | GPU 70.29 CPU 75.05000000000001 ok
+[ 226/453] sorted64 BN-adapt     pixelate           s42 st2026 acc= 20.82   5.5s | GPU 68.81 CPU 75.05000000000001 ok
+[ 227/453] sorted64 BN-adapt     pixelate           s43 st2026 acc= 19.64   3.4s | GPU 68.98 CPU 76.05000000000001 ok
+[ 228/453] sorted64 BN-adapt     pixelate           s44 st2026 acc= 20.52   3.2s | GPU 71.62 CPU 76.05000000000001 ok
+[ 229/453] sorted64 TENT         pixelate           s42 st2026 acc= 19.37   7.5s | GPU 71.96 CPU 76.05000000000001 ok
+[ 230/453] sorted64 TENT         pixelate           s43 st2026 acc= 18.32   7.6s | GPU 71.33 CPU 78.05000000000001 ok
+[ 231/453] sorted64 TENT         pixelate           s44 st2026 acc= 18.42   7.5s | GPU 71.53 CPU 78.05000000000001 ok
+[ 232/453] sorted64 Source       jpeg_compression   s42 st2026 acc= 72.68   3.4s | GPU 70.14 CPU 77.05000000000001 ok
+[ 233/453] sorted64 Source       jpeg_compression   s43 st2026 acc= 74.57   3.4s | GPU 70.14 CPU 77.05000000000001 ok
+[ 234/453] sorted64 Source       jpeg_compression   s44 st2026 acc= 71.52   3.4s | GPU 71.96 CPU 77.05000000000001 ok
+[ 235/453] sorted64 BN-adapt     jpeg_compression   s42 st2026 acc= 18.66   3.4s | GPU 71.62 CPU 77.05000000000001 ok
+[ 236/453] sorted64 BN-adapt     jpeg_compression   s43 st2026 acc= 17.69   3.5s | GPU 71.62 CPU 77.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=85.05000000000001 GPU=69.83 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 237/453] sorted64 BN-adapt     jpeg_compression   s44 st2026 acc= 19.21  24.0s | GPU 69.58 CPU 70.05000000000001 ok
+[ 238/453] sorted64 TENT         jpeg_compression   s42 st2026 acc= 16.88   8.0s | GPU 70.4 CPU 70.05000000000001 ok
+[ 239/453] sorted64 TENT         jpeg_compression   s43 st2026 acc= 17.48  13.0s | GPU 70.68 CPU 77.05000000000001 ok
+[ 240/453] sorted64 TENT         jpeg_compression   s44 st2026 acc= 17.86   5.2s | GPU 72.92 CPU 77.05000000000001 ok
+[ 241/453] sorted64 Source       cifar10_1          s42 st2026 acc= 87.35   0.5s | GPU 72.92 CPU 77.05000000000001 ok
+[ 242/453] sorted64 Source       cifar10_1          s43 st2026 acc= 86.70   0.5s | GPU 72.92 CPU 77.05000000000001 ok
+[ 243/453] sorted64 Source       cifar10_1          s44 st2026 acc= 86.15   0.5s | GPU 72.92 CPU 77.05000000000001 ok
+[ 244/453] sorted64 BN-adapt     cifar10_1          s42 st2026 acc= 26.35   0.5s | GPU 72.92 CPU 77.05000000000001 ok
+[ 245/453] sorted64 BN-adapt     cifar10_1          s43 st2026 acc= 24.60   0.5s | GPU 72.92 CPU 77.05000000000001 ok
+[ 246/453] sorted64 BN-adapt     cifar10_1          s44 st2026 acc= 26.75   0.4s | GPU 72.92 CPU 77.05000000000001 ok
+[ 247/453] sorted64 TENT         cifar10_1          s42 st2026 acc= 25.70   0.9s | GPU 70.17 CPU 77.05000000000001 ok
+[ 248/453] sorted64 TENT         cifar10_1          s43 st2026 acc= 24.25   0.9s | GPU 70.17 CPU 77.05000000000001 ok
+[ 249/453] sorted64 TENT         cifar10_1          s44 st2026 acc= 26.60   0.9s | GPU 70.17 CPU 77.05000000000001 ok
+[ 250/453] iid64    TENT-after   clean              s42 st2026 acc= 92.39   5.9s | GPU 73.03 CPU 77.05000000000001 ok
+[ 251/453] iid64    TENT-after   clean              s43 st2026 acc= 91.91  11.1s | GPU 63.35 CPU 80.05000000000001 warn
+[ 252/453] iid64    TENT-after   clean              s44 st2026 acc= 92.65  11.8s | GPU 65.19 CPU 70.05000000000001 ok
+[ 253/453] iid64    TENT-lr1e-2  clean              s42 st2026 acc= 57.98  11.8s | GPU 71.25 CPU 82.05000000000001 warn
+[ 254/453] iid64    TENT-lr1e-2  clean              s43 st2026 acc= 67.30  15.9s | GPU 69.58 CPU 72.05000000000001 ok
+[ 255/453] iid64    TENT-lr1e-2  clean              s44 st2026 acc= 46.23  13.0s | GPU 70.26 CPU 72.05000000000001 ok
+[ 256/453] iid64    TENT-after   gaussian_noise     s42 st2026 acc= 73.61  16.4s | GPU 70.91 CPU 77.05000000000001 ok
+[ 257/453] iid64    TENT-after   gaussian_noise     s43 st2026 acc= 71.40  10.5s | GPU 72.15 CPU 76.05000000000001 ok
+[ 258/453] iid64    TENT-after   gaussian_noise     s44 st2026 acc= 72.94  14.5s | GPU 66.77 CPU 83.05000000000001 warn
+[ 259/453] iid64    TENT-lr1e-2  gaussian_noise     s42 st2026 acc= 24.31  11.0s | GPU 68.75 CPU 72.05000000000001 ok
+[ 260/453] iid64    TENT-lr1e-2  gaussian_noise     s43 st2026 acc= 32.17   7.6s | GPU 71.53 CPU 72.05000000000001 ok
+[ 261/453] iid64    TENT-lr1e-2  gaussian_noise     s44 st2026 acc= 34.44  11.9s | GPU 67.37 CPU 82.05000000000001 warn
+[ 262/453] iid64    TENT-after   shot_noise         s42 st2026 acc= 75.87  17.7s | GPU 69.27 CPU 76.05000000000001 ok
+[ 263/453] iid64    TENT-after   shot_noise         s43 st2026 acc= 74.35  16.9s | GPU 71.3 CPU 79.05000000000001 ok
+[ 264/453] iid64    TENT-after   shot_noise         s44 st2026 acc= 76.30  11.9s | GPU 72.55 CPU 79.05000000000001 ok
+[ 265/453] iid64    TENT-lr1e-2  shot_noise         s42 st2026 acc= 39.23   7.5s | GPU 72.15 CPU 79.05000000000001 ok
+[ 266/453] iid64    TENT-lr1e-2  shot_noise         s43 st2026 acc= 32.50  15.7s | GPU 68.95 CPU 83.05000000000001 warn
+[ 267/453] iid64    TENT-lr1e-2  shot_noise         s44 st2026 acc= 31.15  13.2s | GPU 70.65 CPU 78.05000000000001 ok
+[ 268/453] iid64    TENT-after   impulse_noise      s42 st2026 acc= 67.23  17.0s | GPU 70.31 CPU 79.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=86.05000000000001 GPU=72.66 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 269/453] iid64    TENT-after   impulse_noise      s43 st2026 acc= 64.98  35.6s | GPU 67.2 CPU 70.05000000000001 ok
+[ 270/453] iid64    TENT-after   impulse_noise      s44 st2026 acc= 67.37  17.1s | GPU 68.36 CPU 78.05000000000001 ok
+[ 271/453] iid64    TENT-lr1e-2  impulse_noise      s42 st2026 acc= 25.13  12.6s | GPU 69.04 CPU 78.05000000000001 ok
+[ 272/453] iid64    TENT-lr1e-2  impulse_noise      s43 st2026 acc= 32.40  12.9s | GPU 69.86 CPU 78.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=89.05000000000001 GPU=70.57 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 273/453] iid64    TENT-lr1e-2  impulse_noise      s44 st2026 acc= 22.89  31.7s | GPU 63.94 CPU 56.05000000000001 ok
+[ 274/453] iid64    TENT-after   defocus_blur       s42 st2026 acc= 86.29  17.1s | GPU 67.71 CPU 81.05000000000001 warn
+[ 275/453] iid64    TENT-after   defocus_blur       s43 st2026 acc= 86.65  22.3s | GPU 68.9 CPU 81.05000000000001 warn
+[ 276/453] iid64    TENT-after   defocus_blur       s44 st2026 acc= 86.05  19.0s | GPU 70.17 CPU 77.05000000000001 ok
+[ 277/453] iid64    TENT-lr1e-2  defocus_blur       s42 st2026 acc= 50.69  12.9s | GPU 70.34 CPU 79.05000000000001 ok
+[ 278/453] iid64    TENT-lr1e-2  defocus_blur       s43 st2026 acc= 36.58  15.9s | GPU 68.56 CPU 84.05000000000001 warn
+[ 279/453] iid64    TENT-lr1e-2  defocus_blur       s44 st2026 acc= 44.98  15.6s | GPU 69.77 CPU 78.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=87.05000000000001 GPU=69.97 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (35 sn bekleme).
+[ 280/453] iid64    TENT-after   glass_blur         s42 st2026 acc= 67.17  51.8s | GPU 69.8 CPU 70.05000000000001 ok
+[ 281/453] iid64    TENT-after   glass_blur         s43 st2026 acc= 66.44  16.9s | GPU 70.43 CPU 79.05000000000001 ok
+[ 282/453] iid64    TENT-after   glass_blur         s44 st2026 acc= 65.50  22.1s | GPU 70.11 CPU 80.05000000000001 warn
+[ 283/453] iid64    TENT-lr1e-2  glass_blur         s42 st2026 acc= 26.81  18.2s | GPU 66.77 CPU 82.05000000000001 warn
+[ 284/453] iid64    TENT-lr1e-2  glass_blur         s43 st2026 acc= 25.02  14.4s | GPU 69.04 CPU 74.05000000000001 ok
+[ 285/453] iid64    TENT-lr1e-2  glass_blur         s44 st2026 acc= 29.62  12.9s | GPU 70.62 CPU 78.05000000000001 ok
+[ 286/453] iid64    TENT-after   motion_blur        s42 st2026 acc= 85.20  17.0s | GPU 71.08 CPU 81.05000000000001 warn
+[ 287/453] iid64    TENT-after   motion_blur        s43 st2026 acc= 84.71  18.1s | GPU 70.96 CPU 77.05000000000001 ok
+[ 288/453] iid64    TENT-after   motion_blur        s44 st2026 acc= 85.30  16.8s | GPU 70.79 CPU 79.05000000000001 ok
+[ 289/453] iid64    TENT-lr1e-2  motion_blur        s42 st2026 acc= 30.99  13.7s | GPU 66.29 CPU 81.05000000000001 warn
+[ 290/453] iid64    TENT-lr1e-2  motion_blur        s43 st2026 acc= 42.83  14.6s | GPU 69.66 CPU 74.05000000000001 ok
+[ 291/453] iid64    TENT-lr1e-2  motion_blur        s44 st2026 acc= 33.66  13.2s | GPU 70.51 CPU 82.05000000000001 warn
+[ 292/453] iid64    TENT-after   zoom_blur          s42 st2026 acc= 87.09  20.1s | GPU 69.07 CPU 84.05000000000001 warn
+[ 293/453] iid64    TENT-after   zoom_blur          s43 st2026 acc= 85.48  14.6s | GPU 71.62 CPU 79.05000000000001 ok
+[ 294/453] iid64    TENT-after   zoom_blur          s44 st2026 acc= 85.60  11.2s | GPU 72.35 CPU 80.05000000000001 warn
+[ 295/453] iid64    TENT-lr1e-2  zoom_blur          s42 st2026 acc= 39.83  15.6s | GPU 69.01 CPU 73.05000000000001 ok
+[ 296/453] iid64    TENT-lr1e-2  zoom_blur          s43 st2026 acc= 36.91  12.9s | GPU 69.89 CPU 73.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=86.05000000000001 GPU=68.59 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (35 sn bekleme).
+[ 297/453] iid64    TENT-lr1e-2  zoom_blur          s44 st2026 acc= 29.81  46.9s | GPU 69.61 CPU 74.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=85.05000000000001 GPU=66.15 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 298/453] iid64    TENT-after   snow               s42 st2026 acc= 81.14  35.4s | GPU 65.16 CPU 75.05000000000001 ok
+[ 299/453] iid64    TENT-after   snow               s43 st2026 acc= 79.28  14.8s | GPU 68.53 CPU 74.05000000000001 ok
+[ 300/453] iid64    TENT-after   snow               s44 st2026 acc= 81.84  10.6s | GPU 70.0 CPU 74.05000000000001 ok
+[ 301/453] iid64    TENT-lr1e-2  snow               s42 st2026 acc= 40.62   7.5s | GPU 69.41 CPU 76.05000000000001 ok
+[ 302/453] iid64    TENT-lr1e-2  snow               s43 st2026 acc= 30.42   7.5s | GPU 70.11 CPU 76.05000000000001 ok
+[ 303/453] iid64    TENT-lr1e-2  snow               s44 st2026 acc= 36.39  12.7s | GPU 68.41 CPU 81.05000000000001 warn
+[ 304/453] iid64    TENT-after   frost              s42 st2026 acc= 80.92  17.3s | GPU 69.52 CPU 73.05000000000001 ok
+[ 305/453] iid64    TENT-after   frost              s43 st2026 acc= 78.48  16.9s | GPU 69.75 CPU 75.05000000000001 ok
+[ 306/453] iid64    TENT-after   frost              s44 st2026 acc= 80.60  16.9s | GPU 70.43 CPU 78.05000000000001 ok
+[ 307/453] iid64    TENT-lr1e-2  frost              s42 st2026 acc= 40.32  19.6s | GPU 70.62 CPU 84.05000000000001 warn
+[ 308/453] iid64    TENT-lr1e-2  frost              s43 st2026 acc= 28.05  17.8s | GPU 69.77 CPU 79.05000000000001 ok
+[ 309/453] iid64    TENT-lr1e-2  frost              s44 st2026 acc= 27.06  13.0s | GPU 70.88 CPU 79.05000000000001 ok
+[ 310/453] iid64    TENT-after   fog                s42 st2026 acc= 85.50  16.7s | GPU 72.41 CPU 80.05000000000001 warn
+[ 311/453] iid64    TENT-after   fog                s43 st2026 acc= 83.96  18.5s | GPU 70.45 CPU 77.05000000000001 ok
+[ 312/453] iid64    TENT-after   fog                s44 st2026 acc= 84.63  17.7s | GPU 66.6 CPU 83.05000000000001 warn
+[ 313/453] iid64    TENT-lr1e-2  fog                s42 st2026 acc= 42.37  14.3s | GPU 70.6 CPU 77.05000000000001 ok
+[ 314/453] iid64    TENT-lr1e-2  fog                s43 st2026 acc= 46.50  13.0s | GPU 71.02 CPU 82.05000000000001 warn
+[ 315/453] iid64    TENT-lr1e-2  fog                s44 st2026 acc= 41.50  14.7s | GPU 67.62 CPU 74.05000000000001 ok
+[ 316/453] iid64    TENT-after   brightness         s42 st2026 acc= 89.55  16.9s | GPU 71.33 CPU 77.05000000000001 ok
+[ 317/453] iid64    TENT-after   brightness         s43 st2026 acc= 89.28  17.0s | GPU 71.36 CPU 79.05000000000001 ok
+[ 318/453] iid64    TENT-after   brightness         s44 st2026 acc= 90.46  18.2s | GPU 69.18 CPU 82.05000000000001 warn
+[ 319/453] iid64    TENT-lr1e-2  brightness         s42 st2026 acc= 45.68  14.1s | GPU 70.26 CPU 73.05000000000001 ok
+[ 320/453] iid64    TENT-lr1e-2  brightness         s43 st2026 acc= 51.26  14.0s | GPU 70.0 CPU 81.05000000000001 warn
+[ 321/453] iid64    TENT-lr1e-2  brightness         s44 st2026 acc= 48.30  14.7s | GPU 66.52 CPU 74.05000000000001 ok
+[ 322/453] iid64    TENT-after   contrast           s42 st2026 acc= 84.69  18.0s | GPU 65.95 CPU 80.05000000000001 warn
+[ 323/453] iid64    TENT-after   contrast           s43 st2026 acc= 81.86  17.9s | GPU 69.46 CPU 71.05000000000001 ok
+[ 324/453] iid64    TENT-after   contrast           s44 st2026 acc= 82.42  16.9s | GPU 70.43 CPU 78.05000000000001 ok
+[ 325/453] iid64    TENT-lr1e-2  contrast           s42 st2026 acc= 39.48  14.8s | GPU 65.41 CPU 83.05000000000001 warn
+[ 326/453] iid64    TENT-lr1e-2  contrast           s43 st2026 acc= 41.19  13.9s | GPU 70.99 CPU 74.05000000000001 ok
+[ 327/453] iid64    TENT-lr1e-2  contrast           s44 st2026 acc= 21.72  14.2s | GPU 66.04 CPU 82.05000000000001 warn
+[ 328/453] iid64    TENT-after   elastic_transform  s42 st2026 acc= 76.88  18.0s | GPU 70.26 CPU 74.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=86.05000000000001 GPU=71.05 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 329/453] iid64    TENT-after   elastic_transform  s43 st2026 acc= 76.12  37.3s | GPU 64.62 CPU 56.05000000000001 ok
+[ 330/453] iid64    TENT-after   elastic_transform  s44 st2026 acc= 76.75  17.0s | GPU 68.13 CPU 74.05000000000001 ok
+[ 331/453] iid64    TENT-lr1e-2  elastic_transform  s42 st2026 acc= 31.59  16.4s | GPU 66.83 CPU 69.05000000000001 ok
+[ 332/453] iid64    TENT-lr1e-2  elastic_transform  s43 st2026 acc= 30.12  13.0s | GPU 68.73 CPU 69.05000000000001 ok
+[ 333/453] iid64    TENT-lr1e-2  elastic_transform  s44 st2026 acc= 25.09  15.9s | GPU 65.58 CPU 83.05000000000001 warn
+[ 334/453] iid64    TENT-after   pixelate           s42 st2026 acc= 81.76  16.7s | GPU 69.75 CPU 74.05000000000001 ok
+[ 335/453] iid64    TENT-after   pixelate           s43 st2026 acc= 79.56  19.1s | GPU 68.13 CPU 71.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=85.05000000000001 GPU=68.7 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 336/453] iid64    TENT-after   pixelate           s44 st2026 acc= 80.98  37.2s | GPU 58.36 CPU 68.05000000000001 ok
+[ 337/453] iid64    TENT-lr1e-2  pixelate           s42 st2026 acc= 27.63  12.8s | GPU 65.36 CPU 72.05000000000001 ok
+[ 338/453] iid64    TENT-lr1e-2  pixelate           s43 st2026 acc= 32.37  12.9s | GPU 66.23 CPU 75.05000000000001 ok
+[ 339/453] iid64    TENT-lr1e-2  pixelate           s44 st2026 acc= 38.03  13.0s | GPU 69.27 CPU 75.05000000000001 ok
+[ 340/453] iid64    TENT-after   jpeg_compression   s42 st2026 acc= 77.72  18.6s | GPU 66.91 CPU 71.05000000000001 ok
+[ 341/453] iid64    TENT-after   jpeg_compression   s43 st2026 acc= 74.67  17.4s | GPU 68.73 CPU 83.05000000000001 warn
+[ 342/453] iid64    TENT-after   jpeg_compression   s44 st2026 acc= 75.90  17.8s | GPU 68.98 CPU 74.05000000000001 ok
+[ 343/453] iid64    TENT-lr1e-2  jpeg_compression   s42 st2026 acc= 36.66  14.1s | GPU 67.31 CPU 84.05000000000001 warn
+[ 344/453] iid64    TENT-lr1e-2  jpeg_compression   s43 st2026 acc= 36.80  14.6s | GPU 66.43 CPU 71.05000000000001 ok
+[ 345/453] iid64    TENT-lr1e-2  jpeg_compression   s44 st2026 acc= 32.84  12.7s | GPU 69.07 CPU 81.05000000000001 warn
+[ 346/453] iid64    TENT-after   cifar10_1          s42 st2026 acc= 84.50   4.0s | GPU 64.48 CPU 81.05000000000001 warn
+[ 347/453] iid64    TENT-after   cifar10_1          s43 st2026 acc= 84.80   4.0s | GPU 64.48 CPU 81.05000000000001 warn
+[ 348/453] iid64    TENT-after   cifar10_1          s44 st2026 acc= 83.80   4.1s | GPU 65.36 CPU 81.05000000000001 warn
+[ 349/453] iid64    TENT-lr1e-2  cifar10_1          s42 st2026 acc= 70.95   3.2s | GPU 66.01 CPU 70.05000000000001 ok
+[ 350/453] iid64    TENT-lr1e-2  cifar10_1          s43 st2026 acc= 69.80   3.3s | GPU 66.01 CPU 70.05000000000001 ok
+[ 351/453] iid64    TENT-lr1e-2  cifar10_1          s44 st2026 acc= 53.75   3.0s | GPU 68.81 CPU 70.05000000000001 ok
+[ 352/453] iid64    BN-adapt     clean              s42 st11 acc= 91.95   6.0s | GPU 69.66 CPU 70.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=85.05000000000001 GPU=70.4 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 353/453] iid64    BN-adapt     clean              s42 st12 acc= 91.99  26.5s | GPU 58.76 CPU 57.05000000000001 ok
+[ 354/453] iid64    BN-adapt     clean              s42 st13 acc= 91.96   6.0s | GPU 64.62 CPU 57.05000000000001 ok
+[ 355/453] iid64    TENT         clean              s42 st11 acc= 92.09  12.8s | GPU 67.0 CPU 79.05000000000001 ok
+[ 356/453] iid64    TENT         clean              s42 st12 acc= 92.32  15.3s | GPU 63.06 CPU 80.05000000000001 warn
+[ 357/453] iid64    TENT         clean              s42 st13 acc= 92.11  13.5s | GPU 67.05 CPU 66.05000000000001 ok
+[ 358/453] iid64    BN-adapt     gaussian_noise     s42 st11 acc= 67.26   6.1s | GPU 67.2 CPU 66.05000000000001 ok
+[ 359/453] iid64    BN-adapt     gaussian_noise     s42 st12 acc= 66.86  12.4s | GPU 60.94 CPU 84.05000000000001 warn
+[ 360/453] iid64    BN-adapt     gaussian_noise     s42 st13 acc= 67.20   7.0s | GPU 63.2 CPU 65.05000000000001 ok
+[ 361/453] iid64    TENT         gaussian_noise     s42 st11 acc= 74.33  13.1s | GPU 68.19 CPU 80.05000000000001 warn
+[ 362/453] iid64    TENT         gaussian_noise     s42 st12 acc= 73.90  15.6s | GPU 67.03 CPU 77.05000000000001 ok
+[ 363/453] iid64    TENT         gaussian_noise     s42 st13 acc= 73.80  12.8s | GPU 69.32 CPU 77.05000000000001 ok
+[ 364/453] iid64    BN-adapt     shot_noise         s42 st11 acc= 69.35   6.3s | GPU 68.16 CPU 79.05000000000001 ok
+[ 365/453] iid64    BN-adapt     shot_noise         s42 st12 acc= 69.35   6.0s | GPU 69.75 CPU 79.05000000000001 ok
+[ 366/453] iid64    BN-adapt     shot_noise         s42 st13 acc= 69.39   6.2s | GPU 70.34 CPU 78.05000000000001 ok
+[ 367/453] iid64    TENT         shot_noise         s42 st11 acc= 76.94  12.8s | GPU 69.97 CPU 78.05000000000001 ok
+[ 368/453] iid64    TENT         shot_noise         s42 st12 acc= 76.73  15.9s | GPU 67.23 CPU 82.05000000000001 warn
+[ 369/453] iid64    TENT         shot_noise         s42 st13 acc= 77.20  12.9s | GPU 69.09 CPU 74.05000000000001 ok
+[ 370/453] iid64    BN-adapt     impulse_noise      s42 st11 acc= 60.17   6.1s | GPU 68.95 CPU 79.05000000000001 ok
+[ 371/453] iid64    BN-adapt     impulse_noise      s42 st12 acc= 59.69   5.5s | GPU 70.34 CPU 79.05000000000001 ok
+[ 372/453] iid64    BN-adapt     impulse_noise      s42 st13 acc= 60.18   6.0s | GPU 69.01 CPU 79.05000000000001 ok
+[ 373/453] iid64    TENT         impulse_noise      s42 st11 acc= 67.99  15.8s | GPU 68.3 CPU 84.05000000000001 warn
+[ 374/453] iid64    TENT         impulse_noise      s42 st12 acc= 67.16  13.0s | GPU 68.87 CPU 77.05000000000001 ok
+[ 375/453] iid64    TENT         impulse_noise      s42 st13 acc= 67.40  12.9s | GPU 69.35 CPU 78.05000000000001 ok
+[ 376/453] iid64    BN-adapt     defocus_blur       s42 st11 acc= 85.44   6.2s | GPU 69.63 CPU 78.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=87.05000000000001 GPU=70.29 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 377/453] iid64    BN-adapt     defocus_blur       s42 st12 acc= 85.36  26.5s | GPU 61.68 CPU 55.05000000000001 ok
+[ 378/453] iid64    BN-adapt     defocus_blur       s42 st13 acc= 85.34   6.2s | GPU 64.76 CPU 55.05000000000001 ok
+[ 379/453] iid64    TENT         defocus_blur       s42 st11 acc= 86.31  12.9s | GPU 66.18 CPU 78.05000000000001 ok
+[ 380/453] iid64    TENT         defocus_blur       s42 st12 acc= 86.46  15.9s | GPU 63.12 CPU 80.05000000000001 warn
+[ 381/453] iid64    TENT         defocus_blur       s42 st13 acc= 86.71  12.6s | GPU 67.39 CPU 67.05000000000001 ok
+[ 382/453] iid64    BN-adapt     glass_blur         s42 st11 acc= 62.03   6.0s | GPU 68.25 CPU 67.05000000000001 ok
+[ 383/453] iid64    BN-adapt     glass_blur         s42 st12 acc= 61.60  11.9s | GPU 61.93 CPU 82.05000000000001 warn
+[ 384/453] iid64    BN-adapt     glass_blur         s42 st13 acc= 62.23   7.4s | GPU 63.15 CPU 67.05000000000001 ok
+[ 385/453] iid64    TENT         glass_blur         s42 st11 acc= 67.86  13.4s | GPU 68.9 CPU 81.05000000000001 warn
+[ 386/453] iid64    TENT         glass_blur         s42 st12 acc= 66.21  15.5s | GPU 67.39 CPU 73.05000000000001 ok
+[ 387/453] iid64    TENT         glass_blur         s42 st13 acc= 64.53  13.0s | GPU 68.67 CPU 73.05000000000001 ok
+[ 388/453] iid64    BN-adapt     motion_blur        s42 st11 acc= 83.81  11.4s | GPU 62.92 CPU 80.05000000000001 warn
+[ 389/453] iid64    BN-adapt     motion_blur        s42 st12 acc= 83.47   8.4s | GPU 64.73 CPU 70.05000000000001 ok
+[ 390/453] iid64    BN-adapt     motion_blur        s42 st13 acc= 83.97   6.3s | GPU 67.54 CPU 70.05000000000001 ok
+[ 391/453] iid64    TENT         motion_blur        s42 st11 acc= 85.43  13.1s | GPU 68.45 CPU 74.05000000000001 ok
+[ 392/453] iid64    TENT         motion_blur        s42 st12 acc= 84.76  13.7s | GPU 69.43 CPU 80.05000000000001 warn
+[ 393/453] iid64    TENT         motion_blur        s42 st13 acc= 85.28  15.0s | GPU 64.59 CPU 68.05000000000001 ok
+[ 394/453] iid64    BN-adapt     zoom_blur          s42 st11 acc= 84.80   6.2s | GPU 70.06 CPU 68.05000000000001 ok
+[ 395/453] iid64    BN-adapt     zoom_blur          s42 st12 acc= 84.45   6.2s | GPU 68.75 CPU 68.05000000000001 ok
+[ 396/453] iid64    BN-adapt     zoom_blur          s42 st13 acc= 84.56   6.2s | GPU 69.72 CPU 79.05000000000001 ok
+[ 397/453] iid64    TENT         zoom_blur          s42 st11 acc= 86.88  14.0s | GPU 70.37 CPU 82.05000000000001 warn
+[ 398/453] iid64    TENT         zoom_blur          s42 st12 acc= 86.12  14.8s | GPU 68.3 CPU 79.05000000000001 ok
+[ 399/453] iid64    TENT         zoom_blur          s42 st13 acc= 86.12  13.1s | GPU 69.92 CPU 83.05000000000001 warn
+[ 400/453] iid64    BN-adapt     snow               s42 st11 acc= 78.80  11.9s | GPU 66.97 CPU 83.05000000000001 warn
+[ 401/453] iid64    BN-adapt     snow               s42 st12 acc= 78.68   7.3s | GPU 65.81 CPU 71.05000000000001 ok
+[ 402/453] iid64    BN-adapt     snow               s42 st13 acc= 78.81   6.0s | GPU 67.82 CPU 71.05000000000001 ok
+[ 403/453] iid64    TENT         snow               s42 st11 acc= 81.39  14.4s | GPU 67.57 CPU 82.05000000000001 warn
+[ 404/453] iid64    TENT         snow               s42 st12 acc= 81.66  15.9s | GPU 66.32 CPU 83.05000000000001 warn
+[ 405/453] iid64    TENT         snow               s42 st13 acc= 81.57  13.8s | GPU 67.85 CPU 70.05000000000001 ok
+[ 406/453] iid64    BN-adapt     frost              s42 st11 acc= 78.51   6.1s | GPU 68.47 CPU 70.05000000000001 ok
+[ 407/453] iid64    BN-adapt     frost              s42 st12 acc= 77.94   6.1s | GPU 69.52 CPU 77.05000000000001 ok
+[ 408/453] iid64    BN-adapt     frost              s42 st13 acc= 78.32   6.3s | GPU 68.27 CPU 77.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=86.05000000000001 GPU=70.54 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 409/453] iid64    TENT         frost              s42 st11 acc= 81.60  33.2s | GPU 63.86 CPU 55.05000000000001 ok
+[ 410/453] iid64    TENT         frost              s42 st12 acc= 81.42  13.0s | GPU 65.7 CPU 77.05000000000001 ok
+[ 411/453] iid64    TENT         frost              s42 st13 acc= 81.16  13.0s | GPU 67.88 CPU 77.05000000000001 ok
+[ 412/453] iid64    BN-adapt     fog                s42 st11 acc= 83.00   6.3s | GPU 67.48 CPU 77.05000000000001 ok
+[ 413/453] iid64    BN-adapt     fog                s42 st12 acc= 82.66   9.9s | GPU 66.8 CPU 82.05000000000001 warn
+[ 414/453] iid64    BN-adapt     fog                s42 st13 acc= 82.96  10.1s | GPU 65.53 CPU 69.05000000000001 ok
+[ 415/453] iid64    TENT         fog                s42 st11 acc= 85.72  13.2s | GPU 68.39 CPU 69.05000000000001 ok
+[ 416/453] iid64    TENT         fog                s42 st12 acc= 85.17  16.4s | GPU 65.84 CPU 81.05000000000001 warn
+[ 417/453] iid64    TENT         fog                s42 st13 acc= 84.73  13.1s | GPU 68.84 CPU 76.05000000000001 ok
+[ 418/453] iid64    BN-adapt     brightness         s42 st11 acc= 89.42  10.0s | GPU 62.1 CPU 80.05000000000001 warn
+[ 419/453] iid64    BN-adapt     brightness         s42 st12 acc= 89.36  10.0s | GPU 61.93 CPU 66.05000000000001 ok
+[ 420/453] iid64    BN-adapt     brightness         s42 st13 acc= 89.60   6.0s | GPU 67.82 CPU 66.05000000000001 ok
+[ 421/453] iid64    TENT         brightness         s42 st11 acc= 90.57  14.6s | GPU 67.43 CPU 82.05000000000001 warn
+[ 422/453] iid64    TENT         brightness         s42 st12 acc= 90.20  16.0s | GPU 66.55 CPU 80.05000000000001 warn
+[ 423/453] iid64    TENT         brightness         s42 st13 acc= 90.22  14.5s | GPU 67.82 CPU 68.05000000000001 ok
+[ 424/453] iid64    BN-adapt     contrast           s42 st11 acc= 84.06   6.2s | GPU 67.48 CPU 68.05000000000001 ok
+[ 425/453] iid64    BN-adapt     contrast           s42 st12 acc= 84.17   6.1s | GPU 69.55 CPU 74.05000000000001 ok
+[ 426/453] iid64    BN-adapt     contrast           s42 st13 acc= 84.05   6.0s | GPU 68.95 CPU 74.05000000000001 ok
+[ 427/453] iid64    TENT         contrast           s42 st11 acc= 83.96  12.9s | GPU 69.24 CPU 79.05000000000001 ok
+[ 428/453] iid64    TENT         contrast           s42 st12 acc= 84.00  12.9s | GPU 68.84 CPU 79.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=89.05000000000001 GPU=70.4 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (35 sn bekleme).
+[ 429/453] iid64    TENT         contrast           s42 st13 acc= 83.30  48.3s | GPU 47.6 CPU 53.05000000000001 ok
+[ 430/453] iid64    BN-adapt     elastic_transform  s42 st11 acc= 74.66   6.0s | GPU 61.96 CPU 53.05000000000001 ok
+[ 431/453] iid64    BN-adapt     elastic_transform  s42 st12 acc= 74.64   6.0s | GPU 64.14 CPU 70.05000000000001 ok
+[ 432/453] iid64    BN-adapt     elastic_transform  s42 st13 acc= 74.69   5.9s | GPU 65.24 CPU 70.05000000000001 ok
+[ 433/453] iid64    TENT         elastic_transform  s42 st11 acc= 76.59  13.1s | GPU 65.24 CPU 78.05000000000001 ok
+[ 434/453] iid64    TENT         elastic_transform  s42 st12 acc= 76.68  12.4s | GPU 66.97 CPU 75.05000000000001 ok
+[ 435/453] iid64    TENT         elastic_transform  s42 st13 acc= 76.78  13.1s | GPU 67.39 CPU 75.05000000000001 ok
+[ 436/453] iid64    BN-adapt     pixelate           s42 st11 acc= 77.45   6.1s | GPU 68.05 CPU 79.05000000000001 ok
+[ 437/453] iid64    BN-adapt     pixelate           s42 st12 acc= 76.61   6.2s | GPU 68.64 CPU 79.05000000000001 ok
+[ 438/453] iid64    BN-adapt     pixelate           s42 st13 acc= 77.18   6.0s | GPU 69.15 CPU 77.05000000000001 ok
+[ 439/453] iid64    TENT         pixelate           s42 st11 acc= 81.46  12.9s | GPU 68.67 CPU 77.05000000000001 ok
+
+[ThermalGuard] SICAKLIK SINIRI: CPU=86.05000000000001 GPU=68.73 °C -> iş yükü duraklatıldı (devam eşiği: CPU<=77.0, GPU<=72.0)
+[ThermalGuard] soğudu, devam ediliyor (20 sn bekleme).
+[ 440/453] iid64    TENT         pixelate           s42 st12 acc= 80.47  33.4s | GPU 65.61 CPU 76.05000000000001 ok
+[ 441/453] iid64    TENT         pixelate           s42 st13 acc= 80.66  13.0s | GPU 66.43 CPU 76.05000000000001 ok
+[ 442/453] iid64    BN-adapt     jpeg_compression   s42 st11 acc= 72.21   6.1s | GPU 66.8 CPU 72.05000000000001 ok
+[ 443/453] iid64    BN-adapt     jpeg_compression   s42 st12 acc= 71.95   6.2s | GPU 67.73 CPU 72.05000000000001 ok
+[ 444/453] iid64    BN-adapt     jpeg_compression   s42 st13 acc= 72.04   6.3s | GPU 67.96 CPU 78.05000000000001 ok
+[ 445/453] iid64    TENT         jpeg_compression   s42 st11 acc= 76.74  12.5s | GPU 68.36 CPU 78.05000000000001 ok
+[ 446/453] iid64    TENT         jpeg_compression   s42 st12 acc= 76.31  12.9s | GPU 69.86 CPU 75.05000000000001 ok
+[ 447/453] iid64    TENT         jpeg_compression   s42 st13 acc= 76.74  15.3s | GPU 66.15 CPU 81.05000000000001 warn
+[ 448/453] iid64    BN-adapt     cifar10_1          s42 st11 acc= 83.80   2.5s | GPU 63.12 CPU 81.05000000000001 warn
+[ 449/453] iid64    BN-adapt     cifar10_1          s42 st12 acc= 84.40   2.5s | GPU 63.12 CPU 81.05000000000001 warn
+[ 450/453] iid64    BN-adapt     cifar10_1          s42 st13 acc= 84.00   1.4s | GPU 65.7 CPU 73.05000000000001 ok
+[ 451/453] iid64    TENT         cifar10_1          s42 st11 acc= 83.60   3.1s | GPU 65.7 CPU 73.05000000000001 ok
+[ 452/453] iid64    TENT         cifar10_1          s42 st12 acc= 84.40   3.3s | GPU 68.3 CPU 73.05000000000001 ok
+[ 453/453] iid64    TENT         cifar10_1          s42 st13 acc= 84.45   3.1s | GPU 68.3 CPU 73.05000000000001 ok
+Bitti. Süre 77.1 dk | termal özet: {'n_pauses': 22, 'paused_seconds': 585.1, 'n_warn_sleeps': 13752, 'cpu_limit': 85.0, 'gpu_limit': 80.0, 'cpu_source': 'perfcounter_thermalzone'}

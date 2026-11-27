@@ -1,0 +1,37 @@
+{
+  "seed42": {
+    "path": "src/models/checkpoints/resnet18_cifar10_seed42.pth",
+    "sha256": "7f2f95d0aca1b73a94ae27d1753921e8977580b60ba39a4c81fcd4131eca6159",
+    "val_acc": 94.84,
+    "clean_test_acc": 93.86,
+    "best_epoch": 46
+  },
+  "seed43": {
+    "path": "src/models/checkpoints/resnet18_cifar10_seed43.pth",
+    "sha256": "0e7d59c6c9875b9a4179b3dc82ccb31ad0aa2d1533ddfcc141d3acc021ec7516",
+    "val_acc": 93.54,
+    "clean_test_acc": 93.44,
+    "best_epoch": 50
+  },
+  "seed44": {
+    "path": "src/models/checkpoints/resnet18_cifar10_seed44.pth",
+    "sha256": "d4492522d89c10437516bda3346ef979ca0c8c5ef706d318bdbe38186fdb6922",
+    "val_acc": 93.88,
+    "clean_test_acc": 93.88,
+    "best_epoch": 47
+  },
+  "seed45": {
+    "path": "src/models/checkpoints/resnet18_cifar10_seed45.pth",
+    "sha256": "225c0a0e6592904b1b46d3a7af281f7ba9a0e179f53e9fb0c99a068269e3b23d",
+    "val_acc": 94.52,
+    "clean_test_acc": 93.71,
+    "best_epoch": 50
+  },
+  "seed46": {
+    "path": "src/models/checkpoints/resnet18_cifar10_seed46.pth",
+    "sha256": "11879abab5a49b4c9d8dd7d284e351ce24593c490d98f519fca3f48fb95b1c9a",
+    "val_acc": 94.14,
+    "clean_test_acc": 93.88,
+    "best_epoch": 49
+  }
+}

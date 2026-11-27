@@ -1,0 +1,14 @@
+# Tested environment: Python 3.12.15, Windows 11, NVIDIA RTX 4050 Laptop GPU (CUDA 12.8)
+# For PyTorch CUDA wheels: --index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+torchvision==0.26.0
+numpy==2.5.4
+pandas==3.1.1
+pyarrow==26.0.1
+pillow==13.0.0
+scikit-learn==1.9.1
+scipy==1.18.1
+matplotlib==3.11.2
+psutil==7.2.2
+tabulate==0.10.0
+pytest==9.2.0

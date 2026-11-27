@@ -1,0 +1,24 @@
+(önceki) MATCH wang2021tent
+MATCH          schneider2020      arXiv 2020 None arXiv=2006.16971v2
+(önceki) MATCH nado2020
+(önceki) MATCH hendrycks2019
+MATCH          recht2018          SemanticScholar 2018 arXiv.org arXiv=1806.00451
+(önceki) MATCH guo2017
+MISMATCH       hendrycks2017      Crossref 2022 Proceedings of the 30th ACM International Conference on Multimedia arXiv=None
+(önceki) MATCH guillory2021
+MISMATCH       garg2022           Crossref None None arXiv=None
+MISMATCH       jiang2022          Crossref 2023 IEEE Transactions on Image Processing arXiv=None
+(önceki) MATCH baek2022
+(önceki) MATCH deng2021
+(önceki) MATCH ovadia2019
+(önceki) MATCH lee2024aetta
+MISMATCH       niu2022eata        Crossref 2025 IEEE Transactions on Pattern Analysis and Machine Intelligence arXiv=None
+MISMATCH       niu2023sar         Crossref 2025 Moore and More arXiv=None
+(önceki) MATCH wang2022cotta
+(önceki) MATCH gong2022note
+MATCH          zhao2023pitfalls   SemanticScholar 2023 International Conference on Machine Learning arXiv=2306.03536
+(önceki) MATCH he2016resnet
+MATCH          ioffe2015bn        arXiv 2015 None arXiv=1502.03167v3
+MISMATCH       demsar2006         Crossref 2014 Lecture Notes in Computer Science arXiv=None
+MISMATCH       holm1979           Crossref 1987 Biometrics arXiv=None
+Doğrulanamayan/uyuşmayan: ['hendrycks2017', 'garg2022', 'jiang2022', 'niu2022eata', 'niu2023sar', 'demsar2006', 'holm1979']

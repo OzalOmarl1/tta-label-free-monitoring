@@ -1,0 +1,4 @@
+{"time": "2026-11-08 06:42:22", "plans": ["val", "main"], "n_pauses": 0, "paused_seconds": 0.0, "n_warn_sleeps": 122, "cpu_limit": 85.0, "gpu_limit": 80.0, "cpu_source": "perfcounter_thermalzone"}
+{"time": "2026-11-08 08:35:21", "plans": ["val", "main", "ablation", "stream"], "n_pauses": 22, "paused_seconds": 585.1, "n_warn_sleeps": 13752, "cpu_limit": 85.0, "gpu_limit": 80.0, "cpu_source": "perfcounter_thermalzone"}
+{"time": "2026-11-08 09:07:26", "plans": ["val", "main", "ablation"], "n_pauses": 8, "paused_seconds": 190.0, "n_warn_sleeps": 3982, "cpu_limit": 85.0, "gpu_limit": 80.0, "cpu_source": "perfcounter_thermalzone"}
+{"time": "2026-11-08 10:00:27", "plans": ["val", "main", "ablation"], "n_pauses": 0, "paused_seconds": 0.0, "n_warn_sleeps": 1013, "cpu_limit": 85.0, "gpu_limit": 80.0, "cpu_source": "perfcounter_thermalzone"}

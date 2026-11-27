@@ -1,0 +1,134 @@
+F:\OSTIM\Deep Learning Ostim\Vize-Final Proje\Final\scripts\analyze.py:293: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  df_["abs_conf_mean"] = df_[[f"abs_{e}_src" for e in CONF_ESTIMATORS]].mean(1)
+F:\OSTIM\Deep Learning Ostim\Vize-Final Proje\Final\scripts\analyze.py:293: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  df_["abs_conf_mean"] = df_[[f"abs_{e}_src" for e in CONF_ESTIMATORS]].mean(1)
+{
+ "n_runs": 782,
+ "seeds_present": [
+  42,
+  43,
+  44,
+  45,
+  46
+ ]
+}
+H2 {
+ "AC": {
+  "n": 16,
+  "median_diff": 0.3268827351422381,
+  "mean_diff": 0.14253656490888916,
+  "W": 63.0,
+  "p": 0.820892333984375,
+  "rank_biserial": 0.07352941176470588,
+  "p_holm": 1.0,
+  "decision": "desteklenmedi (kanıt yetersiz)"
+ },
+ "AC-TS": {
+  "n": 16,
+  "median_diff": 2.2532269344197347,
+  "mean_diff": 2.158884981495713,
+  "W": 0.0,
+  "p": 3.0517578125e-05,
+  "rank_biserial": 1.0,
+  "p_holm": 0.000152587890625,
+  "decision": "desteklendi"
+ },
+ "DoC": {
+  "n": 16,
+  "median_diff": 0.32688273514223276,
+  "mean_diff": 0.14253656490889,
+  "W": 63.0,
+  "p": 0.820892333984375,
+  "rank_biserial": 0.07352941176470588,
+  "p_holm": 1.0,
+  "decision": "desteklenmedi (kanıt yetersiz)"
+ },
+ "ATC-MC": {
+  "n": 16,
+  "median_diff": 3.3360000000000016,
+  "mean_diff": 3.4720000000000004,
+  "W": 0.0,
+  "p": 3.0517578125e-05,
+  "rank_biserial": 1.0,
+  "p_holm": 0.000152587890625,
+  "decision": "desteklendi"
+ },
+ "ATC-NE": {
+  "n": 16,
+  "median_diff": 4.403,
+  "mean_diff": 4.455750000000002,
+  "W": 0.0,
+  "p": 3.0517578125e-05,
+  "rank_biserial": 1.0,
+  "p_holm": 0.000152587890625,
+  "decision": "desteklendi"
+ }
+}
+H3 {
+ "BN-adapt": {
+  "best_conf_estimator": "ATC-NE (src)",
+  "n": 16,
+  "median_diff": -0.09099999999999686,
+  "mean_diff": -0.9330624999999998,
+  "W": 43.0,
+  "p": 0.21142578125,
+  "rank_biserial": -0.36764705882352944,
+  "p_holm": 0.21142578125,
+  "decision": "desteklenmedi (kanıt yetersiz)"
+ },
+ "TENT": {
+  "best_conf_estimator": "ATC-NE (matched)",
+  "n": 16,
+  "median_diff": -2.6369999999999987,
+  "mean_diff": -3.132062499999999,
+  "W": 3.0,
+  "p": 0.000152587890625,
+  "rank_biserial": -0.9558823529411765,
+  "p_holm": 0.00030517578125,
+  "decision": "desteklendi"
+ }
+}
+H4 {
+ "acc_BN-adapt_vs_Source_sorted64": {
+  "n": 16,
+  "median_diff": -36.839,
+  "mean_diff": -35.336999999999996,
+  "W": 0.0,
+  "p": 3.0517578125e-05,
+  "rank_biserial": -1.0,
+  "p_holm": 0.0001220703125,
+  "decision": "desteklendi"
+ },
+ "confMAE_BN-adapt_sorted64_vs_iid64": {
+  "n": 16,
+  "median_diff": 36.95615018338279,
+  "mean_diff": 36.43265570113128,
+  "W": 0.0,
+  "p": 3.0517578125e-05,
+  "rank_biserial": 1.0,
+  "p_holm": 0.0001220703125,
+  "decision": "desteklendi"
+ },
+ "acc_TENT_vs_Source_sorted64": {
+  "n": 16,
+  "median_diff": -37.94,
+  "mean_diff": -36.587,
+  "W": 0.0,
+  "p": 3.0517578125e-05,
+  "rank_biserial": -1.0,
+  "p_holm": 0.0001220703125,
+  "decision": "desteklendi"
+ },
+ "confMAE_TENT_sorted64_vs_iid64": {
+  "n": 16,
+  "median_diff": 45.15632739953228,
+  "mean_diff": 44.25019646802107,
+  "W": 0.0,
+  "p": 3.0517578125e-05,
+  "rank_biserial": 1.0,
+  "p_holm": 0.0001220703125,
+  "decision": "desteklendi"
+ }
+}
+H1 {'n': 16, 'median_diff': 0.3268827351422381, 'mean_diff': 0.14253656490888916, 'W': 63.0, 'p': 0.820892333984375, 'rank_biserial': 0.07352941176470588, 'decision': 'desteklenmedi (kanıt yetersiz)'}
+H5 {'n': 32, 'median_diff': 0.0, 'mean_diff': -11.7941875, 'W': 0.0, 'p': 0.0009815397525216685, 'rank_biserial': -1.0, 'best_fixed_policy': 'Source', 'decision': 'desteklendi'}

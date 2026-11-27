@@ -1,0 +1,70 @@
+(önceki) MATCH wang2021tent
+(önceki) MATCH schneider2020
+(önceki) MATCH nado2020
+(önceki) MATCH hendrycks2019
+(önceki) MATCH recht2018
+(önceki) MATCH guo2017
+(önceki) MATCH hendrycks2017
+(önceki) MATCH guillory2021
+(önceki) MATCH garg2022
+(önceki) MATCH jiang2022
+(önceki) MATCH baek2022
+(önceki) MATCH deng2021
+(önceki) MATCH ovadia2019
+(önceki) MATCH lee2024aetta
+(önceki) MATCH niu2022eata
+(önceki) MATCH niu2023sar
+(önceki) MATCH wang2022cotta
+(önceki) MATCH gong2022note
+(önceki) MATCH zhao2023pitfalls
+(önceki) MATCH he2016resnet
+(önceki) MATCH ioffe2015bn
+(önceki) MATCH demsar2006
+(önceki) MATCH holm1979
+MATCH          sun2020ttt         OpenAlex 2019 arXiv (Cornell University) arXiv=None
+MATCH          liang2020shot      OpenAlex 2020 arXiv (Cornell University) arXiv=None
+MATCH          iwasawa2021t3a     OpenAlex 2021 neural information processing systems arXiv=None
+MATCH          zhang2022memo      OpenAlex 2022 neural information processing systems arXiv=None
+MATCH          boudiaf2022lame    OpenAlex 2022 IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings arXiv=None
+MATCH          goyal2022conjugate OpenAlex 2022 neural information processing systems arXiv=None
+MATCH          lim2023ttn         OpenAlex 2023 arXiv (Cornell University) arXiv=None
+MATCH          yuan2023rotta      OpenAlex 2023 IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings arXiv=None
+MATCH          dobler2023rmt      OpenAlex 2023 IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings arXiv=None
+MATCH          press2023rdumb     OpenAlex 2023 neural information processing systems arXiv=None
+MATCH          rusak2022selflearning arXiv 2021 None arXiv=2104.12928v4
+MATCH          lee2024deyo        OpenAlex 2024 arXiv (Cornell University) arXiv=None
+MATCH          press2024entropy   OpenAlex 2024 arXiv (Cornell University) arXiv=None
+MATCH          niu2024foa         OpenAlex 2024 arXiv (Cornell University) arXiv=None
+MATCH          marsden2024roid    OpenAlex 2024 IEEE Winter Conference on Applications of Computer Vision arXiv=None
+MATCH          kim2024aotl        OpenAlex 2024 neural information processing systems arXiv=None
+MATCH          shu2022tpt         OpenAlex 2022 arXiv (Cornell University) arXiv=None
+MATCH          yoon2024ctpt       OpenAlex 2024 arXiv (Cornell University) arXiv=None
+MATCH          liang2024survey    OpenAlex 2024 International Journal of Computer Vision arXiv=None
+MATCH          chuang2020invariant OpenAlex 2020 arXiv (Cornell University) arXiv=None
+MATCH          chen2021ensembles  OpenAlex 2021 arXiv (Cornell University) arXiv=None
+MATCH          chen2021mandoline  OpenAlex 2021 arXiv (Cornell University) arXiv=None
+MATCH          deng2021rotation   arXiv 2021 None arXiv=2106.05961v1
+MATCH          miller2021line     OpenAlex 2021 arXiv (Cornell University) arXiv=None
+MATCH          yu2022projnorm     OpenAlex 2022 arXiv (Cornell University) arXiv=None
+MATCH          kirsch2022note     OpenAlex 2022 arXiv (Cornell University) arXiv=None
+MATCH          deng2023dispersity OpenAlex 2023 arXiv (Cornell University) arXiv=None
+MATCH          lu2023cot          OpenAlex 2023 neural information processing systems arXiv=None
+MATCH          rosenfeld2023dis2  OpenAlex 2023 neural information processing systems arXiv=None
+MATCH          rabanser2019failing OpenAlex 2018 arXiv (Cornell University) arXiv=None
+MATCH          gal2016dropout     OpenAlex 2015 arXiv (Cornell University) arXiv=None
+MATCH          lakshminarayanan2017 OpenAlex 2016 arXiv (Cornell University) arXiv=None
+MATCH          kumar2019verified  OpenAlex 2019 arXiv (Cornell University) arXiv=None
+MATCH          minderer2021       OpenAlex 2021 arXiv (Cornell University) arXiv=None
+MATCH          taori2020          OpenAlex 2020 arXiv (Cornell University) arXiv=None
+MATCH          hendrycks2021many  OpenAlex 2021 IEEE/CVF International Conference on Computer Vision (ICCV) arXiv=None
+MATCH          koh2021wilds       OpenAlex 2020 CaltechAUTHORS (California Institute of Technology) arXiv=None
+MATCH          gulrajani2021      OpenAlex 2020 arXiv (Cornell University) arXiv=None
+MATCH          croce2021robustbench OpenAlex 2020 arXiv (Cornell University) arXiv=None
+MATCH          benavoli2017       OpenAlex 2016 arXiv (Cornell University) arXiv=None
+MATCH          nosek2018          OpenAlex 2018 Proceedings of the National Academy of Sciences arXiv=None
+MATCH          agarwal2021precipice OpenAlex 2021 arXiv (Cornell University) arXiv=None
+MATCH          bouthillier2021    OpenAlex 2021 arXiv (Cornell University) arXiv=None
+MATCH          pineau2021         OpenAlex 2020 arXiv (Cornell University) arXiv=None
+MATCH          kerby2014          OpenAlex 2014 Comprehensive Psychology arXiv=None
+MATCH          saravanan2020      OpenAlex 2019 bioRxiv (Cold Spring Harbor Laboratory) arXiv=None
+Doğrulanamayan/uyuşmayan: []

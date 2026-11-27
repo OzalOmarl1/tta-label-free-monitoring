@@ -1,0 +1,18 @@
+alan,aile,Source,BN-adapt,TENT
+clean,clean,93.75 ± 0.19,91.63 ± 0.68,92.29 ± 0.28
+gaussian_noise,noise,26.96 ± 2.07,66.55 ± 1.65,73.28 ± 1.23
+shot_noise,noise,33.67 ± 2.40,68.56 ± 1.92,75.87 ± 0.99
+impulse_noise,noise,23.71 ± 2.48,60.03 ± 1.56,67.14 ± 1.49
+defocus_blur,blur,52.26 ± 3.26,85.13 ± 0.45,86.47 ± 0.30
+glass_blur,blur,45.07 ± 2.39,62.36 ± 1.19,66.51 ± 0.78
+motion_blur,blur,63.15 ± 2.35,83.62 ± 0.64,84.80 ± 0.48
+zoom_blur,blur,59.42 ± 2.96,84.60 ± 0.70,86.40 ± 0.84
+snow,weather,73.13 ± 0.81,78.13 ± 0.96,81.08 ± 1.02
+frost,weather,58.04 ± 1.06,77.27 ± 1.42,80.43 ± 1.18
+fog,weather,69.29 ± 1.96,82.16 ± 0.90,84.67 ± 0.59
+brightness,weather,89.16 ± 0.44,88.73 ± 0.93,89.65 ± 0.47
+contrast,digital,29.22 ± 1.54,83.92 ± 0.54,83.10 ± 1.12
+elastic_transform,digital,73.97 ± 0.88,74.24 ± 0.86,76.67 ± 0.68
+pixelate,digital,44.88 ± 4.65,76.03 ± 1.01,80.77 ± 0.81
+jpeg_compression,digital,72.92 ± 1.11,71.36 ± 0.86,76.33 ± 1.18
+cifar10_1,natural,86.38 ± 0.68,83.17 ± 0.39,83.97 ± 0.61

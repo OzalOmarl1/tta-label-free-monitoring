@@ -1,0 +1,24 @@
+(önceki) MATCH wang2021tent
+(önceki) MATCH schneider2020
+(önceki) MATCH nado2020
+(önceki) MATCH hendrycks2019
+(önceki) MATCH recht2018
+(önceki) MATCH guo2017
+MATCH          hendrycks2017      arXiv(id) 2016 None arXiv=1610.02136
+(önceki) MATCH guillory2021
+MATCH          garg2022           SemanticScholar 2022 International Conference on Learning Representations arXiv=2201.04234
+MATCH          jiang2022          arXiv(id) 2021 None arXiv=2106.13799
+(önceki) MATCH baek2022
+(önceki) MATCH deng2021
+(önceki) MATCH ovadia2019
+(önceki) MATCH lee2024aetta
+MATCH          niu2022eata        SemanticScholar 2022 International Conference on Machine Learning arXiv=2204.02610
+MATCH          niu2023sar         arXiv(id) 2023 None arXiv=2302.12400
+(önceki) MATCH wang2022cotta
+(önceki) MATCH gong2022note
+(önceki) MATCH zhao2023pitfalls
+(önceki) MATCH he2016resnet
+(önceki) MATCH ioffe2015bn
+MATCH          demsar2006         SemanticScholar 2006 Journal of machine learning research arXiv=None
+MISMATCH       holm1979           Crossref 1987 Biometrics arXiv=None
+Doğrulanamayan/uyuşmayan: ['holm1979']

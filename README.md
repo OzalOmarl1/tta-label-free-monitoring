@@ -6,40 +6,27 @@ Ozal Omarli — Advisor: Asst. Prof. Ramin Abbaszadi — OSTİM Technical Univer
 
 ---
 
-## Abstract
+## Overview
 
-This repository contains the code, preregistration, results and documents of a study on how well the accuracy of a model can be estimated without labels after test-time adaptation (TTA). Five independent CIFAR ResNet-18 models were run with Source, BN-adapt and TENT on clean CIFAR-10, 15 CIFAR-10-C corruptions (severity 5) and CIFAR-10.1, under i.i.d. and label-sorted streams. The errors of the AC, AC-TS, DoC, ATC-MC, ATC-NE and GDE estimators were then measured with preregistered hypothesis tests, and a label-free "adapt / do not adapt" gate was evaluated.
+This repository contains the code, preregistration and results of a study on how well the accuracy of a model can be estimated without labels after test-time adaptation (TTA). Five independent CIFAR ResNet-18 models were run with Source, BN-adapt and TENT on clean CIFAR-10, 15 CIFAR-10-C corruptions (severity 5) and CIFAR-10.1, under i.i.d. and label-sorted streams. The errors of the AC, AC-TS, DoC, ATC-MC, ATC-NE and GDE estimators were then measured with preregistered hypothesis tests, and a label-free "adapt / do not adapt" gate was evaluated.
 
-## Documents
-
-| Document | English | Turkish |
-|---|---|---|
-| Paper (TMLR format) | [PDF](docs/paper/TMLR_Article_EN.pdf) | [PDF](docs/paper/TMLR_Makale_TR.pdf) |
-| Presentation | [PDF](docs/presentation/Presentation_EN.pdf) · [HTML](docs/presentation/Presentation_EN.html) | [PDF](docs/presentation/Sunum_TR.pdf) · [HTML](docs/presentation/Sunum_TR.html) |
-| Project proposal | [PDF](docs/proposal/Proposal_EN.pdf) | [PDF](docs/proposal/Proje_Onerisi_TR_Updated.pdf) |
-| Progress report | [PDF](docs/progress-report/Project_Progress_Report.pdf) · [Slides](docs/progress-report/Project_Progress_Presentation_EN.html) | [PDF](docs/progress-report/Proje_Ilerleme_Raporu_TR.pdf) · [Slides](docs/progress-report/Proje_Ilerleme_Sunumu_TR.html) |
-| Literature review (2016–2026) | [PDF](docs/literature-review/Literature_Review_2016-2026.pdf) | [PDF](docs/literature-review/Literatur_Derlemesi_2016-2026_TR.pdf) |
-
-HTML files are shown as source code on GitHub; download them and open them in a browser.
+Main results and hypothesis decisions: see [`Final/README.md`](Final/README.md).
 
 ## Repository structure
 
 ```
 Final/                  main project (ttamon package)
   ttamon/               data, models, methods, estimators, metrics, statistics, thermal guard
-  scripts/              training, prediction collection, analysis, figures, reference checks, LaTeX generation
+  scripts/              training, prediction collection, analysis, figures, audit checks
   tests/                pytest unit tests
   results/              all_runs.csv, summary.json, tables/, logs/   (raw logits: see Releases)
   figures/              analysis figures
-  paper/                bibliography records and verification reports
-  latex/                LaTeX templates for the paper, proposal, report and literature review + TMLR style files
-  presentation/         HTML slide sources and generators
+  thermal/              notes on the thermal guard
   PREREGISTRATION.md    preregistered hypotheses and deviations
 src/, scripts/, tests/  original (audited) code base, used by Final/scripts/verify_audit.py
 results/                logs of the original code base (incl. training curves for seeds 42–44)
 AUDIT.md                audit findings for the original code base
 data/                   datasets (not in the repository; see data/README.md)
-docs/                   submitted documents (PDF/HTML)
 ```
 
 ## Large files (GitHub Releases)
@@ -68,8 +55,8 @@ cd Final
 * **Tables and figures only** (no GPU or retraining needed): download the datasets as described in `data/README.md` (labels are read from them), extract `raw_logits.zip` into `Final/results/`, then run `python scripts/analyze.py` and `python scripts/make_figures.py` inside `Final/`.
 * **Full pipeline:** download the datasets as described in `data/README.md`, place the checkpoints, and run `Final/run_all.ps1` (Windows) or `Final/run_all.sh`.
 
-Every number in the paper and the presentation is read automatically from `Final/results/summary.json` and `Final/results/tables/`. Seeds, environment and hardware details are in `Final/README.md`.
+All reported numbers are generated automatically into `Final/results/summary.json` and `Final/results/tables/`. Seeds, environment and hardware details are in `Final/README.md`.
 
-## License note
+## Data note
 
-The TMLR style files under `Final/latex/_style/tmlr-style-file-main/` are distributed under their own license (Apache 2.0). The CIFAR-10, CIFAR-10-C and CIFAR-10.1 datasets are not included in this repository and are subject to the terms of their original sources.
+The CIFAR-10, CIFAR-10-C and CIFAR-10.1 datasets are not included in this repository and are subject to the terms of their original sources.

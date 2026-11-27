@@ -1,0 +1,6 @@
+Alan başına std'nin 16 kaymalı alan üzerinden ortalaması.
+
+| yöntem   |   akış sırası std (pp, 4 akış, model 42) |   model tohumu std (pp, 5 model) |
+|:---------|-----------------------------------------:|---------------------------------:|
+| BN-adapt |                                    0.2   |                            0.998 |
+| TENT     |                                    0.461 |                            0.859 |
