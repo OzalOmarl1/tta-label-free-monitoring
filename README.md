@@ -10,7 +10,35 @@ Ozal Omarli — Advisor: Asst. Prof. Ramin Abbaszadi — OSTİM Technical Univer
 
 This repository contains the code, preregistration and results of a study on how well the accuracy of a model can be estimated without labels after test-time adaptation (TTA). Five independent CIFAR ResNet-18 models were run with Source, BN-adapt and TENT on clean CIFAR-10, 15 CIFAR-10-C corruptions (severity 5) and CIFAR-10.1, under i.i.d. and label-sorted streams. The errors of the AC, AC-TS, DoC, ATC-MC, ATC-NE and GDE estimators were then measured with preregistered hypothesis tests, and a label-free "adapt / do not adapt" gate was evaluated.
 
-Main results and hypothesis decisions: see [`Final/README.md`](Final/README.md).
+## Results at a glance
+
+All numbers: 5 independent ResNet-18 models (mean ± std), 16 shifted domains (15 CIFAR-10-C corruptions + CIFAR-10.1), test batches of 64 samples. **iid64** = shuffled test stream, **sorted64** = label-sorted test stream.
+
+### 1. Test-time adaptation works on i.i.d. streams
+
+![Per-domain accuracy of Source, BN-adapt and TENT](assets/figures/1_per_domain_accuracy.png)
+
+On the i.i.d. stream, TENT raises accuracy on all 15 corruptions; mean shifted accuracy goes from **56.3%** (Source) to **76.6%** (BN-adapt) and **79.8%** (TENT). On the label-sorted stream, the same methods collapse to **21.0%** and **19.7%**.
+
+### 2. How wrong are label-free accuracy estimates?
+
+![Mean absolute error of label-free estimators](assets/figures/2_estimator_error_heatmap.png)
+
+Mean absolute error (percentage points) of each label-free accuracy estimator. After i.i.d. adaptation, agreement between independent models (**GDE**) is the most accurate estimator (**1.4–1.6 pp**). On label-sorted streams, every estimator is off by **26–64 pp** for the adapted models.
+
+### 3. Estimates vs. true accuracy
+
+![Label-free estimate vs. true accuracy](assets/figures/3_estimate_vs_true.png)
+
+Domain-level estimates on the i.i.d. stream (5-model average). The dashed line is a perfect estimate; points above it mean the estimator overestimates accuracy.
+
+### 4. A label-free "adapt or not" gate
+
+![Regret of the adapt-or-not gate](assets/figures/4_adapt_or_not_gate_regret.png)
+
+Regret relative to an oracle that always picks the best option (lower is better). Label-free gates stay within **0–3.6 pp** of the oracle in both conditions, while every fixed choice loses up to **23.7 pp** (always Source) or **36.6 pp** (always TENT) in one of them.
+
+Full result table and hypothesis decisions: [`Final/README.md`](Final/README.md).
 
 ## Repository structure
 
@@ -26,6 +54,7 @@ Final/                  main project (ttamon package)
 src/, scripts/, tests/  original (audited) code base, used by Final/scripts/verify_audit.py
 results/                logs of the original code base (incl. training curves for seeds 42–44)
 AUDIT.md                audit findings for the original code base
+assets/figures/         the English result figures shown in this README
 data/                   datasets (not in the repository; see data/README.md)
 ```
 
